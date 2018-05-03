@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Cuisinart - 首页</title>
+		<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Best Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+		<script type="application/x-javascript">
+			addEventListener("load", function() {
+				setTimeout(hideURLbar, 0);
+			}, false);
+
+			function hideURLbar() {
+				window.scrollTo(0, 1);
+			}
+		</script>
+		<!-- //for-mobile-apps -->
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/responsive.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" href="css/flowChart.css" />
+		<!-- js -->
+		<script src="js/jquery.min.js"></script>
+		<!-- //js -->
+		<!-- cart -->
+		<script src="js/simpleCart.min.js"></script>
+		<!-- cart -->
+		<!-- for bootstrap working -->
+		<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+		<!-- //for bootstrap working -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<!-- timer -->
+		<link rel="stylesheet" href="css/jquery.countdown.css" />
+		<!-- //timer -->
+		<!-- animation-effect -->
+		<link href="css/animate.min.css" rel="stylesheet">
+		
+		<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script>
+			jQuery(function($) {'use strict';
+				//Initiat WOW JS
+				new WOW().init();
+				
+				/*--- 移动端导航栏展开JS ---*/
+				$('li.dropdown').find('.fa-angle-down').each(function() {
+					$(this).on('click', function() {
+						if($(window).width() < 768) {
+							$(this).parent().next().slideToggle();
+						}
+						return false;
+					});
+				});
+				/*--- //移动端导航栏展开JS ---*/
+				
+				$(window).load(function(){
+					var $portfolio_selectors = $('.portfolio-filter >li>a');
+					if($portfolio_selectors.length) {
+						var $portfolio = $('.portfolio-items');
+						$portfolio.isotope({
+							itemSelector : '.portfolio-item',
+							layoutMode : 'fitRows'
+						});
+						$portfolio_selectors.on('click', function(){
+								$portfolio_selectors.removeClass('active');
+								$(this).addClass('active');
+								var selector = $(this).attr('data-filter');
+								$portfolio.isotope({ filter: selector });
+								return false;
+						});
+					}
+				});
+			});
+		</script>
+		<!-- //animation-effect -->
+	</head>
+
+	<body>
+		<!-- 头部 -->
+		<header id="header">
+			<div class="navbar navbar-inverse" role="navigation">
+				<div class="container">
+					<div class="navbar-header animated wow zoomIn" data-wow-delay=".5s">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+						<a class="navbar-brand" href="index.html">
+							<h1><img src="images/logo.png" alt="logo"></h1>
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="index.html">首页</a>
+							</li>
+							<li>
+								<a href="about.html">关于我们</a>
+							</li>
+							<li class="dropdown">
+								<a href="products.html">产品介绍 <i class="fa fa-angle-down"></i></a>
+								<ul role="menu" class="sub-menu">
+									<li>
+										<a href="products.html">双面电饼档</a>
+									</li>
+									<li>
+										<a href="products.html">料理机/破壁料理机</a>
+									</li>
+									<li>
+										<a href="products.html">蒸锅</a>
+									</li>
+									<li>
+										<a href="products.html">蒸汽烤箱</a>
+									</li>
+									<li>
+										<a href="products.html">华夫机</a>
+									</li>
+									<li>
+										<a href="products.html">厨师机</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">甄选菜谱</a>
+							</li>
+							<li>
+								<a href="#">联系我们</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //头部 -->
+		
+		<div class="breadcrumbs">
+			<div class="container">
+				<ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
+					<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>首页</a></li>
+					<li class="active">甄选食谱</li>
+				</ol>
+			</div>
+		</div>
+		
+		<!-- 菜谱详情页 -->
+		<div id="single-portfolio-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="cb_banner">
+						<img src="images/about-header.jpg" class="img-responsive center-block"></img>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="single-portfolio-wrapper">
+						<div class="col-md-8 col-sm-8">
+							<h1>味噌焖羊腩</h1>
+							<span class="info"></span>
+							<p>
+								入秋了，美膳雅带来北京厨房的一道特色应季菜品“味噌焖羊腩”。上等东山羊腩肉搭配栗子和马蹄，由日本味噌焖出酥香软糯的绝美滋味和曼妙口感，绝对是秋季温补贴膘神器！快叫上你的小伙伴在家试试吧。
+								入秋了，美膳雅带来北京厨房的一道特色应季菜品“味噌焖羊腩”。上等东山羊腩肉搭配栗子和马蹄，由日本味噌焖出酥香软糯的绝美滋味和曼妙口感，绝对是秋季温补贴膘神器！快叫上你的小伙伴在家试试吧。
+								入秋了，美膳雅带来北京厨房的一道特色应季菜品“味噌焖羊腩”。上等东山羊腩肉搭配栗子和马蹄，由日本味噌焖出酥香软糯的绝美滋味和曼妙口感，绝对是秋季温补贴膘神器！快叫上你的小伙伴在家试试吧。
+							</p>
+						</div>
+						<div class="col-md-3 col-md-offset-1 col-sm-4">
+							<div class="project-information">
+								<table class="table table-striped">
+									<tbody>
+										<tr>
+											<td>菜系:</td>
+											<td>中式</td>
+										</tr>
+										<tr>
+											<td>制作时间:</td>
+											<td>65分钟</td>
+										</tr>
+										<tr>
+											<td>准备时间:</td>
+											<td>25分钟</td>
+										</tr>
+										<tr>
+											<td>难易程度:</td>
+											<td>
+												<div class="rating">
+													<div class="rating-left">
+														<img src="images/2.png" alt=" " class="img-responsive" />
+													</div>
+													<div class="rating-left">
+														<img src="images/2.png" alt=" " class="img-responsive" />
+													</div>
+													<div class="rating-left">
+														<img src="images/2.png" alt=" " class="img-responsive" />
+													</div>
+													<div class="rating-left">
+														<img src="images/1.png" alt=" " class="img-responsive" />
+													</div>
+													<div class="rating-left">
+														<img src="images/1.png" alt=" " class="img-responsive" />
+													</div>
+													<div class="clearfix"> </div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div style="margin-left:15px;margin-right:15px">
+						<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+							<ul id="myTab" class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">主料</a></li>
+								<li role="presentation" class=""><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">辅料</a></li>
+								<li role="presentation" class=""><a href="#Seasoning" role="tab" id="Seasoning-tab" data-toggle="tab" aria-controls="Seasoning">调料</a></li>
+							</ul>
+							<div id="myTabContent" class="tab-content">
+								<div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+									<div class="list-group list-group-alternate"> 
+										<p class="list-group-item"><span class="badge badge-primary">1000g</span> <i class="ti ti-email"></i> 羊肉 </p> 
+										<p class="list-group-item"><span class="badge badge-primary">25粒左右</span> <i class="ti ti-eye"></i> 栗子 </p> 
+										<p class="list-group-item"><span class="badge badge-primary">数粒</span> <i class="ti ti-headphone-alt"></i> 马蹄 </p>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+									<div class="list-group list-group-alternate"> 
+										<p class="list-group-item"><span class="badge">2段</span> <i class="ti ti-email"></i> 竹蔗 </p> 
+										<p class="list-group-item"><span class="badge">50g</span> <i class="ti ti-eye"></i> 姜 </p> 
+										<p class="list-group-item"><span class="badge">50g</span> <i class="ti ti-headphone-alt"></i> 大蒜 </p>
+										<p class="list-group-item"><span class="badge">少许</span> <i class="ti ti-headphone-alt"></i> 蒜苗 </p>
+										<p class="list-group-item"><span class="badge">少许</span> <i class="ti ti-headphone-alt"></i> 红甜椒 </p>
+										<p class="list-group-item"><span class="badge">数片</span> <i class="ti ti-headphone-alt"></i> 柠檬叶 </p>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="Seasoning" aria-labelledby="Seasoning-tab">
+									<div class="list-group list-group-alternate"> 
+										<p class="list-group-item"><span class="badge">各一大汤匙</span> <i class="ti ti-email"></i> 红、白味噌 </p> 
+										<p class="list-group-item"><span class="badge">一小块</span> <i class="ti ti-eye"></i> 红腐乳 </p> 
+										<p class="list-group-item"><span class="badge">100ml</span> <i class="ti ti-headphone-alt"></i> 广东米酒 </p>
+										<p class="list-group-item"><span class="badge">少许</span> <i class="ti ti-headphone-alt"></i> 盐 </p>
+										<p class="list-group-item"><span class="badge">一汤匙</span> <i class="ti ti-headphone-alt"></i> 冰糖 </p>
+										<p class="list-group-item"><span class="badge">一汤匙</span> <i class="ti ti-headphone-alt"></i> 生粉 </p>
+										<p class="list-group-item"><span class="badge">适量</span> <i class="ti ti-headphone-alt"></i> 植物油 </p>
+										<p class="list-group-item"><span class="badge">适量</span> <i class="ti ti-headphone-alt"></i> 水 </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="recipe_steps">
+						<h1>菜谱步骤</h1>
+						<span class="info"> </span>
+						<div class="flowChart col-lg-8">
+							<div class="flowChart-left">
+								<div class="dashed"></div>
+							</div>
+							<div class="flowChart-right">
+								<div class="oneNode">
+									<div class="check check-danger">
+										1
+									</div>
+									<div class="tag-boder">
+										<div class="tag">
+										</div>
+									</div>
+									<div class="NodeDetail">
+										<div class="NodeDetail-content">
+											<p>小牛腱切薄片（最好稍稍冻一下好切，我今天赶时间切的有点厚[撇嘴]）</p>
+										</div>
+										<div class="NodeDetail-title">
+											<img src="images/cb_details/1.jpg" class="img-responsive"/>
+										</div>
+									</div>
+								</div>
+								<div class="oneNode">
+									<div class="check check-danger">
+										2
+									</div>
+									<div class="tag-boder">
+										<div class="tag">
+										</div>
+									</div>
+									<div class="NodeDetail">
+										<div class="NodeDetail-content">
+											<p>陈皮1/4片泡软切丝，姜切丝（稍多一些），生抽，黄酒（我用的花雕），淀粉，盐，糖，花生油适量依次倒入拌匀腌制，我在想加入蚝油也是应该可以的，下次我试下。</p>
+										</div>
+										<div class="NodeDetail-title">
+											<img src="images/cb_details/2.jpg" class="img-responsive center-block"/>
+										</div>
+									</div>
+								</div>
+								<div class="oneNode">
+									<div class="check check-danger">
+										3
+									</div>
+									<div class="tag-boder">
+										<div class="tag">
+										</div>
+									</div>
+									<div class="NodeDetail">
+										<div class="NodeDetail-content">
+											<p>把腌好的牛肉整理尽量平铺，锅中放水，水开后，大火蒸10分钟，(但也要根据牛肉量，掌握时间，如果牛肉切的薄，其实很容易蒸熟，如果蒸的时间长反而会老) 出锅撒入香葱花儿提香。</p>
+										</div>
+										<div class="NodeDetail-title">
+											<img src="images/cb_details/3.jpg" class="img-responsive center-block"/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="categories animated wow slideInUp animated" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;" data-wow-delay=".5s">
+								<h3>小贴士</h3>
+								<p>1、主料宜选用东山羊带骨腩肉，皮质较厚，胶质丰富，吃起来口感软糯，滋味香润。</p>
+								<p>2、竹蔗味道清甜，柠檬叶味道清香，焖羊肉时铺在锅底不仅可以防止粘锅，还可以去除羊肉的膻味。</p>
+								<p>3、羊肉裹上少量生粉后再油炸和焖煮，口感会更加酥香软糯。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //菜谱详情页 -->
+			
+		<!-- 尾部 -->
+		<div class="footer">
+			<div class="container">
+				<div class="footer-logo animated wow slideInLeft" data-wow-delay=".5s">
+					<h2><a href="index.html">Cuisinart <span>savor the good life</span></a></h2>
+				</div>
+				<div class="copy-right animated wow slideInRight" data-wow-delay=".5s">
+					<p>Copyright &copy; 2018.Company name All rights reserved.More Templates - Collect from</p>
+				</div>
+			</div>
+		</div>
+		<!-- //尾部 -->
+		
+	</body>
+
+</html>

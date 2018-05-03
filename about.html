@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Cuisinart - 首页</title>
+		<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Best Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+		<script type="application/x-javascript">
+			addEventListener("load", function() {
+					setTimeout(hideURLbar, 0);
+				},
+				false
+			);
+
+			function hideURLbar() {
+				window.scrollTo(0, 1);
+			}
+		</script>
+		<!-- //for-mobile-apps -->
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/responsive.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/animate.min.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+		<!-- js -->
+		<script src="js/jquery.min.js"></script>
+		<!-- //js -->
+		<!-- cart -->
+		<script src="js/simpleCart.min.js"></script>
+		<!-- cart -->
+		<!-- for bootstrap working -->
+		<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+		<!-- //for bootstrap working -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<!-- timer -->
+		<link rel="stylesheet" href="css/jquery.countdown.css" />
+		<!-- //timer -->
+		<!-- animation-effect -->
+		<link href="css/animate.min.css" rel="stylesheet">
+		<script src="js/wow.min.js"></script>
+		<script src="js/jquery.countTo.js"></script>
+		<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+		<script>
+			jQuery(function($) {'use strict';
+				//Initiat WOW JS
+				new WOW().init();
+				
+				/*--- 移动端导航栏展开JS ---*/
+				//Responsive Nav
+				$('li.dropdown').find('.fa-angle-down').each(function() {
+					$(this).on('click', function() {
+						if($(window).width() < 768) {
+							$(this).parent().next().slideToggle();
+						}
+						return false;
+					});
+				});
+				/*--- //移动端导航栏展开JS ---*/
+				
+				/*--- 数字轮播 ---*/
+				$('.number').each(count);
+				function count(options) {
+					var $this = $(this);
+					options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+					$this.countTo(options);
+				}
+				var form = $('#main-contact-form');
+				form.submit(function(event){
+					event.preventDefault();
+					var form_status = $('<div class="form_status"></div>');
+					$.ajax({
+						url: $(this).attr('action'),
+						beforeSend: function(){
+							form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
+						}
+					}).done(function(data){
+						form_status.html('<p class="text-success">Thank you for contact us. As early as possible  we will contact you</p>').delay(3000).fadeOut();
+					});
+				});
+				/*--- //数字轮播 ---*/
+			});
+			
+			
+		</script>
+		<script>
+			jQuery(document).ready(function ($) {
+    			//Initial Out clients slider in client section
+    				$('#clint-slider').bxSlider({
+			        pager: false,
+			        minSlides: 1,
+			        maxSlides: 5,
+			        moveSlides: 2,
+			        slideWidth: 210,
+			        slideMargin: 25,
+			        prevSelector: $('#client-prev'),
+			        nextSelector: $('#client-next'),
+			        prevText: '<i class="fa fa-angle-double-left"></i>',
+			        nextText: '<i class="fa fa-angle-double-right"></i>'
+		    		});
+			});
+		</script>
+		<!-- //animation-effect -->
+	</head>
+
+	<body>
+		<!-- 头部 -->
+		<header id="header">
+			<div class="navbar navbar-inverse" role="navigation">
+				<div class="container">
+					<div class="navbar-header animated wow zoomIn" data-wow-delay=".5s">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+						<a class="navbar-brand" href="index.html">
+							<h1><img src="images/logo.png" alt="logo"></h1>
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="index.html">首页</a>
+							</li>
+							<li>
+								<a href="about.html">关于我们</a>
+							</li>
+							<li class="dropdown">
+								<a href="products.html">产品介绍 <i class="fa fa-angle-down"></i></a>
+								<ul role="menu" class="sub-menu">
+									<li>
+										<a href="products.html">双面电饼档</a>
+									</li>
+									<li>
+										<a href="products.html">料理机/破壁料理机</a>
+									</li>
+									<li>
+										<a href="products.html">蒸锅</a>
+									</li>
+									<li>
+										<a href="products.html">蒸汽烤箱</a>
+									</li>
+									<li>
+										<a href="products.html">华夫机</a>
+									</li>
+									<li>
+										<a href="products.html">厨师机</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">甄选菜谱</a>
+							</li>
+							<li>
+								<a href="#">联系我们</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //头部 -->
+		
+		<!-- banner -->
+		<div class="banner">
+			<div class="container">
+				<div class="banner-info animated wow zoomIn" data-wow-delay=".5s">
+					<h3>体验纯粹的美式健康生活</h3>
+					<h4>&nbsp;</h4>
+					<h4>&nbsp;</h4>
+					<div class="wmuSlider example1">
+						<div class="wmuSliderWrapper">
+							<article style="position: absolute; width: 100%; opacity: 0;">
+								<div class="banner-wrap">
+									<div class="banner-info1">
+										<p>The Most Trusted Name in the Kitchen</p>
+									</div>
+								</div>
+							</article>
+							<article style="position: absolute; width: 100%; opacity: 0;">
+								<div class="banner-wrap">
+									<div class="banner-info1">
+										<p>设计 + 质量 + 专业赞誉</p>
+									</div>
+								</div>
+							</article>
+							<article style="position: absolute; width: 100%; opacity: 0;">
+								<div class="banner-wrap">
+									<div class="banner-info1">
+										<p>Savor The Good Life</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+					<script src="js/jquery.wmuSlider.js"></script>
+					<script>
+						$('.example1').wmuSlider();
+					</script>
+				</div>
+			</div>
+		</div>
+		<!-- //banner -->
+		
+		<!-- 品牌故事 -->
+		<section id="about">
+			<div class="container">
+				<div class="timeline">
+					<h3 class="animated wow zoomIn" data-wow-delay=".5s">品牌故事</h3>
+					<p class="animated wow zoomIn" data-wow-delay=".5s">70年代，美国工程师Carl Sontheimer的一次法国之旅，让他爱上了法国的风情和美食。回国后，他决定为专业厨师设计烹饪工具，因而创立了厨具品牌Cuisinart。当时，Cuisinart以领先科技制造了“多功能食物处理器”系列，旋即风靡全国，成为每个家庭不可或缺的厨房好帮手，并被媒体争相报道。时至今日， Cuisinart在美国牢牢占据了厨房小家电和炊具的领导地位，年销售额超过10亿美元。</p>
+				</div>
+				<div class="row about-cols">
+					<div class="col-md-4 wow fadeInUp">
+						<div class="about-col">
+							<div class="img">
+								<img src="images/timeline/about-mission.jpg" alt="" class="img-fluid">
+								<div class="icon"><i class="fa fa-apple"></i></div>
+							</div>
+							<h2 class="title"><a href="#">设计灵感</a></h2>
+							<p>
+								乔布斯喜欢Cuisinart厨具，有时会特意走过走廊，驻足去看。乔布斯开发MAC电脑时，从Cuisinart的食物处理机的设计上得到了灵感。
+							</p>
+						</div>
+					</div>
+		
+					<div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+						<div class="about-col">
+							<div class="img">
+								<img src="images/timeline/about-plan.jpg" alt="" class="img-fluid">
+								<div class="icon"><i class="fa fa-street-view"></i></div>
+							</div>
+							<h2 class="title"><a href="#">设计简洁</a></h2>
+							<p>
+								Cuisinart在产品设计上更加注重人体工程学的简洁设计，增加产品的操作使用舒适度。简洁设计 · 圆润的外形 · 人体工程学按钮
+							</p>
+						</div>
+					</div>
+		
+					<div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+						<div class="about-col">
+							<div class="img">
+								<img src="images/timeline/about-vision.jpg" alt="" class="img-fluid">
+								<div class="icon"><i class="fa fa-gavel"></i></div>
+							</div>
+							<h2 class="title"><a href="#">“巨匠”精神</a></h2>
+							<p>
+								秉持“巨匠”精神，Cuisinart在产品细节上不断提升，希望 消费者在每天的产品使用中感受Cuisinart在细节上的用心。
+							</p>
+						</div>
+					</div>
+		
+				</div>
+		
+			</div>
+		</section>
+		<!-- //品牌故事 -->
+		
+		<!-- 品牌数据 -->
+		<section id="action">
+			<div class="vertical-center">
+				<div class="container">
+					<div class="timeline">
+						<h3 class="animated wow zoomIn" data-wow-delay=".5s">我们优势</h3>
+					</div>
+					<div class="row">
+						<div class="action count">
+							<div class="col-sm-3 col-xs-6 text-center wow bounceIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+								<h3>旗下拥有品牌数</h3>
+								<h1 class="number bold" data-to="24" data-speed="3000" data-from="0"></h1>
+								<h3>个</h3>
+							</div>
+							<div class="col-sm-3 col-xs-6 text-center wow bounceIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+								<h3>制造的个人护理产品</h3>
+								<h1 class="number bold" data-to="780" data-speed="3000" data-from="0"></h1>
+								<h3>万件/年</h3>
+							</div>
+							<div class="col-sm-3 col-xs-6 text-center wow bounceIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+								<h3>制造的厨房电器</h3>
+								<h1 class="number bold" data-to="160" data-speed="3000" data-from="0"></h1>
+								<h3>万件/年</h3>
+							</div>
+							<div class="col-sm-3 col-xs-6 text-center wow bounceIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+								<h3>核心管理层团队具有</h3>
+								<h1 class="number bold" data-to="30" data-speed="3000" data-from="0"></h1>
+								<h3>年专业经验</h3>
+							</div>
+							
+						</div>
+					</div>
+					<div class="title animated wow zoomIn" data-wow-delay=".5s">
+						<p> 销往全球<b>124</b>个国家.在美国，<b>95%</b>的家庭拥有1个或更多美康雅的产品</p>
+					</div>
+					<img src="images/map.png" class="animated wow zoomIn" data-wow-delay=".5s" style="width: 100%;">
+				</div>
+			</div>
+		</section>			
+		<!-- //品牌数据 -->
+		
+		<!-- 线下渠道 -->
+		<div class="section third-section animated wow slideInLeft" data-wow-delay=".5s">
+			<div class="container centered">
+				<div class="sub-section">
+					<div class="title clearfix">
+						<p> 欧美线下电器市场的<b>Top</b>品牌，跟各大连锁型商场都是长期合作的伙伴，在国际积累了良好的口碑。</p>
+					</div>
+					<ul class="row client-slider" id="clint-slider">
+						<li>
+							<a href="">
+								<img src="images/clients/ClientLogo01.png" alt="client logo 1">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/clients/ClientLogo02.png" alt="client logo 2">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/clients/ClientLogo03.png" alt="client logo 3">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/clients/ClientLogo04.png" alt="client logo 4">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/clients/ClientLogo05.png" alt="client logo 5">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/clients/ClientLogo06.png" alt="client logo 6">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="images/clients/ClientLogo07.png" alt="client logo 7">
+							</a>
+						</li>
+					</ul>
+					<ul class="client-nav pull-right">
+						<li id="client-prev"></li>
+						<li id="client-next"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- //线下渠道 -->
+		
+		<!-- 发展历程 -->
+		<div class="container">
+			<div class="timeline">
+				<h3 class="animated wow slideInRight" data-wow-delay=".5s">发展历程</h3>
+			</div>
+			<div class="blog-wrapper">
+				<div class="main">
+					<ul class="cbp_tmtimeline">
+						<li>
+							<div class="cbp_tmtime">
+								<span>1975年</span>
+							</div>
+							<div class="cbp_tmicon fa fa-newspaper-o"></div>
+							<div class="cbp_tmlabel wow animated fadeInUp" data-wow-delay="0.10s">
+								<div class="blog-v2-image">
+									<img src="images/timeline/img_4.jpg" alt="Blog Post">
+								</div>
+								<p>美国工程师Carl Sontheimer推出第一款食物处理机，并在美食界和家庭主妇中<b>迅速风靡</b></p>
+							</div>
+						</li>
+						<li>
+							<div class="cbp_tmtime">
+								<span>1975年-1985年</span>
+							</div>
+							<div class="cbp_tmicon fa fa-newspaper-o"></div>
+							<div class="cbp_tmlabel wow animated fadeInUp" data-wow-delay="0.10s">
+								<div class="blog-v2-image">
+									<img src="images/timeline/img_3.jpg" alt="Blog Post">
+								</div>
+								<p>Cuisinart成功上市了多款<b>革新</b>产品和技术</p>
+							</div>
+						</li>
+						<li>
+							<div class="cbp_tmtime">
+								<span>1986年</span>
+							</div>
+							<div class="cbp_tmicon fa fa-newspaper-o"></div>
+							<div class="cbp_tmlabel wow animated fadeInUp" data-wow-delay="0.10s">
+								<div class="blog-v2-image">
+									<img src="images/timeline/img_3.jpg" alt="Blog Post">
+								</div>
+								<p>迷你食物处理机上市</p>
+							</div>
+						</li>
+						<li>
+							<div class="cbp_tmtime">
+								<span>1989年</span>
+							</div>
+							<div class="cbp_tmicon fa fa-newspaper-o"></div>
+							<div class="cbp_tmlabel wow animated fadeInUp" data-wow-delay="0.10s">
+								<div class="blog-v2-image">
+									<img src="images/timeline/img_3.jpg" alt="Blog Post">
+								</div>
+								<p>Conair集团正式收购<b>Cuisinart·美膳雅</b>品牌。</p>
+							</div>
+						</li>
+						<li>
+							<div class="cbp_tmtime">
+								<span>1999年</span>
+							</div>
+							<div class="cbp_tmicon fa fa-newspaper-o"></div>
+							<div class="cbp_tmlabel wow animated fadeInUp" data-wow-delay="0.10s">
+								<div class="blog-v2-image">
+									<img src="images/timeline/img_3.jpg" alt="Blog Post">
+								</div>
+								<p>推出新品烧烤烤箱，和具有革新意义的搅拌&食物处理2合1产品——<b>Smart Power Duet</b></p>
+							</div>
+						</li>
+						<li>
+							<div class="cbp_tmtime">
+								<span>2001年</span>
+							</div>
+							<div class="cbp_tmicon fa fa-newspaper-o"></div>
+							<div class="cbp_tmlabel wow animated fadeInUp" data-wow-delay="0.10s">
+								<div class="blog-v2-image">
+									<img src="images/timeline/img_3.jpg" alt="Blog Post">
+								</div>
+								<p>扩展到炊具和咖啡品类</p>
+							</div>
+						</li>
+						<li>
+							<div class="cbp_tmtime">
+								<span>2002年-2010年</span>
+							</div>
+							<div class="cbp_tmicon fa fa-newspaper-o"></div>
+							<div class="cbp_tmlabel wow animated fadeInUp" data-wow-delay="0.10s">
+								<div class="blog-v2-image">
+									<img src="images/timeline/img_3.jpg" alt="Blog Post">
+								</div>
+								<p>Cuisinart<b>登陆法国</b>，获得Paul Bocuse的赞誉。2010年，美食研究中心在Johnson&Wales大学，美食艺术学院成立。</p>
+							</div>
+						</li>
+						<li>
+							<div class="cbp_tmtime">
+								<span>2011年</span>
+							</div>
+							<div class="cbp_tmicon fa fa-newspaper-o"></div>
+							<div class="cbp_tmlabel wow animated fadeInUp" data-wow-delay="0.10s">
+								<div class="blog-v2-image">
+									<img src="images/timeline/img_3.jpg" alt="Blog Post">
+								</div>
+								<p>Cuisinart<b>革新</b>了破壁料理机</p>
+							</div>
+						</li>
+						<li>
+							<div class="cbp_tmtime">
+								<span>2013年</span>
+							</div>
+							<div class="cbp_tmicon fa fa-newspaper-o"></div>
+							<div class="cbp_tmlabel wow animated fadeInUp" data-wow-delay="0.10s">
+								<div class="blog-v2-image">
+									<img src="images/timeline/img_3.jpg" alt="Blog Post">
+								</div>
+								<p>Cuisinart不断<b>扩展</b>厨房品类，包括玻璃器皿、瓷器餐具等</p>
+							</div>
+						</li>
+						<li>
+							<div class="cbp_tmtime">
+								<span>2018年</span>
+							</div>
+							<div class="cbp_tmicon fa fa-newspaper-o"></div>
+							<div class="cbp_tmlabel wow animated fadeInUp" data-wow-delay="0.10s">
+								<div class="blog-v2-image">
+									<img src="images/timeline/img_3.jpg" alt="Blog Post">
+								</div>
+								<p>Cuisinart正式<b>进入中国</b></p>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- //发展历程 -->
+		
+		<!-- 尾部 -->
+		<div class="footer">
+			<div class="container">
+				<div class="footer-logo animated wow slideInLeft" data-wow-delay=".5s">
+					<h2><a href="index.html">Cuisinart <span>savor the good life</span></a></h2>
+				</div>
+				<div class="copy-right animated wow slideInRight" data-wow-delay=".5s">
+					<p>Copyright &copy; 2018.Company name All rights reserved.More Templates - Collect from</p>
+				</div>
+			</div>
+		</div>
+		<!-- //尾部 -->
+		
+	</body>
+
+</html>
