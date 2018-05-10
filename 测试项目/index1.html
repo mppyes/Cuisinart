@@ -1,0 +1,236 @@
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/swiper.animate1.0.3.min.js"></script>
+<style>
+	.banner-cut {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.banner-bin {
+		width: 100%;
+		height: 100%;
+		float: left;
+		display: block;
+		overflow: hidden;
+		background: center no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+	
+	.banner-absolute {
+		position: absolute;
+		width: 100%;
+		height: 94%;
+		top: 0;
+		left: 0;
+	}
+	
+	.banner-bin.swiper-slide-active .banner-full {
+		transform: translate(0);
+		-moz-transform: translate(0);
+		-ms-transform: translate(0);
+		-o-transform: translate(0);
+		-webkit-transform: translate(0);
+	}
+	
+	.banner-full {
+		width: 800px;
+		height: 350px;
+		position: absolute;
+		border: 2000px solid rgba(0, 0, 0, .4);
+		box-sizing: content-box;
+		margin: -2175px 0 0 -2400px;
+		background: none;
+		left: 50%;
+		top: 50%;
+		z-index: 991;
+		transition: .5s .6s;
+		/* -webkit-transition: .5s .6s; */
+		-moz-transition: .5s .6s;
+		-ms-transition: .5s .6s;
+		-o-transition: .5s .6s;
+		/* transform: translate(1350px, 750px); */
+		-moz-transform: translate(1350px, 750px);
+		-ms-transform: translate(1350px, 750px);
+		-o-transform: translate(1350px, 750px);
+		/* -webkit-transform: translate(1350px, 750px); */
+	}
+	
+	.banner-full ol,
+	.banner-full ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.banner-full ol li:nth-child(1) {
+		border-width: 5px 0 0 5px;
+		top: 0;
+		left: 0;
+	}
+	
+	.banner-full ol li,
+	.banner-full ul li {
+		border-color: #00dfb9;
+		border-style: solid;
+		border-width: 0;
+		position: absolute;
+		width: 24px;
+		height: 24px;
+	}
+	
+	.banner-full ol li:nth-child(2) {
+		border-width: 5px 5px 0 0;
+		top: 0;
+		right: 0;
+	}
+	
+	.banner-full ol li:nth-child(3) {
+		border-width: 0 0 5px 5px;
+		bottom: 0;
+		left: 0;
+	}
+	
+	.banner-full ol li:nth-child(4) {
+		border-width: 0 5px 5px 0;
+		bottom: 0;
+		right: 0;
+	}
+	
+	.banner-full ul li:nth-child(1) {
+		border-width: 5px 0 0 0;
+		margin: 0 0 0 -12px;
+		top: 0;
+		left: 50%;
+	}
+	
+	.banner-full ul li:nth-child(2) {
+		border-width: 0 5px 0 0;
+		margin: -12px 0 0 0;
+		top: 50%;
+		right: 0;
+	}
+	
+	.banner-full ul li:nth-child(3) {
+		border-width: 0 0 5px 0;
+		margin: 0 -12px 0 0;
+		bottom: 0;
+		right: 50%;
+	}
+	
+	.banner-full ul li:nth-child(4) {
+		border-width: 0 0 0 5px;
+		margin: 0 0 -12px 0;
+		bottom: 50%;
+		left: 0;
+	}
+	.banner-bin .table-box {
+    padding-bottom: 6%;
+}
+
+.table-box {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.banner-bin .table-cell {
+    position: relative;
+}
+.table-cell {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+.banner-write {
+    position: relative;
+    z-index: 992;
+    word-break: break-all;
+    padding: 0 10px;
+}
+.banner-write .w1 {
+    font-family: Microsoft JhengHei;
+    color: #fff;
+    font-size: 263px;
+    display: inline-block;
+    line-height: 0;
+}
+.banner-write .w2 {
+    text-align: left;
+    display: inline-block;
+    padding-left: 10px;
+}
+.banner-write .w2 .w21 {
+    color: #000;
+    font-size: 36px;
+    display: block;
+}
+.banner-write .w2 .w22 {
+    line-height: .8;
+    letter-spacing: -5px;
+    font-family: Helvetica;
+    font-size: 82px;
+    color: #00dfb9;
+    display: inline-block;
+    border-bottom: 1px solid #00dfb9;
+    margin: 5px 0 10px 0;
+}
+.banner-write .w2 .w23 {
+    color: #ccc;
+    font-size: 16px;
+    display: block;
+}
+</style>
+<div class="banner-cut">
+	<div class="banner-bin swiper-lazy swiper-lazy-loaded swiper-slide-active" style="background-image: url(./images/1.jpg);">
+		<div class="banner-absolute">
+			<div class="table-box">
+				<div class="table-cell">
+					<div class="banner-write ">
+						<span class="w1" style="text-shadow:1px 1px 16px #6D8D24;">9</span>
+						<span class="w2" style="text-shadow:1px 1px 0px #fff;">
+							<span class="w21">年专注 · 互联网+2</span>
+							<span class="w22">WEBSITE</span>
+							<span class="w23">始于 2009 - 2017 展望未来<br>专注于设计体验，专业于解决方案</span>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="banner-full visible-lg-block">
+				<ol class="list-paddingleft-2">
+					<li>
+						<p><br></p>
+					</li>
+					<li>
+						<p><br></p>
+					</li>
+					<li>
+						<p><br></p>
+					</li>
+					<li>
+						<p><br></p>
+					</li>
+				</ol>
+				<ul class="list-paddingleft-2">
+					<li>
+						<p><br></p>
+					</li>
+					<li>
+						<p><br></p>
+					</li>
+					<li>
+						<p><br></p>
+					</li>
+					<li>
+						<p><br></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
