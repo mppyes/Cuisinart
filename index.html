@@ -1,542 +1,412 @@
 <!DOCTYPE html>
-<html>
 
-	<head>
-		<title>Cuisinart - 首页</title>
-		<!-- for-mobile-apps -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="keywords" content="Best Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-		<script type="application/x-javascript">
-			addEventListener("load", function() {
-				setTimeout(hideURLbar, 0);
-			}, false);
+<head>
+    <title>HTML5网站即将上线单页面特效 - 站长素材</title>
+    <!-- META DATA -->
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	
+    <!--<link rel="stylesheet" href="css/custom.css">-->
 
-			function hideURLbar() {
-				window.scrollTo(0, 1);
-			}
-		</script>
-		<!-- //for-mobile-apps -->
-		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-		<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
-		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-		<link href="css/responsive.css" rel="stylesheet" type="text/css" media="all" />
-		<!-- js -->
-		<script src="js/jquery.min.js"></script>
-		<!-- //js -->
-		<!-- cart -->
-		<script src="js/simpleCart.min.js"></script>
-		<!-- cart -->
-		<!-- for bootstrap working -->
-		<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
-		<!-- //for bootstrap working -->
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-		<!-- timer -->
-		<link rel="stylesheet" href="css/jquery.countdown.css" />
-		<!-- //timer -->
-		<!-- animation-effect -->
-		<link href="css/animate.min.css" rel="stylesheet">
-		<script src="js/wow.min.js"></script>
-		<script>
-			new WOW().init();
-			/*移动端导航栏展开JS*/
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 
-			jQuery(function($) {
-				'use strict';
-
-				//Responsive Nav
-				$('li.dropdown').find('.fa-angle-down').each(function() {
-					$(this).on('click', function() {
-						if($(window).width() < 768) {
-							$(this).parent().next().slideToggle();
-						}
-						return false;
-					});
-				});
-			});
-		</script>
-		<!-- //animation-effect -->
-	</head>
-
-	<body>
-		<!-- 头部 -->
-		<header id="header">
-			<div class="navbar navbar-inverse" role="navigation">
-				<div class="container">
-					<div class="navbar-header animated wow zoomIn" data-wow-delay=".5s">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                        <span class="sr-only">切换导航</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-						<a class="navbar-brand" href="index.html">
-							<h1><img src="images/logo.png" alt="logo"></h1>
-						</a>
-					</div>
-					<div class="collapse navbar-collapse" id="navbar-collapse">
-						<ul class="nav navbar-nav navbar-right">
-							<li>
-								<a href="index.html">首页</a>
-							</li>
-							<li>
-								<a href="about.html">关于我们</a>
-							</li>
-							<li class="dropdown">
-								<a href="products.html">产品介绍 <i class="fa fa-angle-down"></i></a>
-								<ul role="menu" class="sub-menu">
-									<li>
-										<a href="products.html">双面电饼档</a>
-									</li>
-									<li>
-										<a href="products.html">料理机/破壁料理机</a>
-									</li>
-									<li>
-										<a href="products.html">蒸锅</a>
-									</li>
-									<li>
-										<a href="products.html">蒸汽烤箱</a>
-									</li>
-									<li>
-										<a href="products.html">华夫机</a>
-									</li>
-									<li>
-										<a href="products.html">厨师机</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">甄选菜谱</a>
-							</li>
-							<li>
-								<a href="#">联系我们</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</header>
-		<!-- //头部 -->
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+	<style>
+		.swiper-container {
+		  width: 100%;
+		  height: 100%;
+		}
+		.swiper-slide {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.swiper-slide img{
+			width: 100%;
+			height:100%;
+		}
+		.swiper-pageination{
+			position: absolute;
+    			text-align: center;
+    			-webkit-transition: .3s opacity;
+    			-o-transition: .3s opacity;
+    			transition: .3s opacity;
+    			-webkit-transform: translate3d(0,0,0);
+    			transform: translate3d(0,0,0);
+    			z-index: 10;
+    			bottom: 80px;
+    			left: 40px;
+    			right: 40px;
+    			height: 30px;
+    			line-height: 30px;
+		}
+		.swiper-pagination-bullet-active-main{
+    			opacity: 10;
+		    background: #FFF;
+		}
+		.banner_top , .banner-bottom{
+			background-color: #333;
+			background-color:rgba(0,0,0,0.5);
+			height: 80px;
+			width: 100%;
+			position: absolute;
+			z-index: 2;
+		}
+		.banner-bottom{
+			position: fixed; /*or前面的是absolute就可以用*/  
+       		bottom: 0px; 
+		}
+		/**/
+		.banner-cut {
+			width: 100%;
+			height: 100%;
+		}
+		.banner-bin {
+			width: 100%;
+			height: 100%;
+			float: left;
+			display: block;
+			overflow: hidden;
+			background: center no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+		.banner-absolute {
+			position: absolute;
+			width: 100%;
+			height: 94%;
+			top: 0;
+			left: 0;
+		}
+		.banner-full {
+			width: 800px;
+			height: 350px;
+			position: absolute;
+			border: 2000px solid rgba(0, 0, 0, .4);
+			box-sizing: content-box;
+			margin: -2175px 0 0 -2400px;
+			background: none;
+			left: 50%;
+			top: 50%;
+			z-index: 991;
+		}
+		.banner-full ol,
+		.banner-full ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.banner-full ol li:nth-child(1) {
+			border-width: 5px 0 0 5px;
+			top: 0;
+			left: 0;
+		}
+		.banner-full ol li,
+		.banner-full ul li {
+			border-color: #6D8D24;
+			border-style: solid;
+			border-width: 0;
+			position: absolute;
+			width: 24px;
+			height: 24px;
+		}
+		.banner-full ol li:nth-child(2) {
+			border-width: 5px 5px 0 0;
+			top: 0;
+			right: 0;
+		}
+		.banner-full ol li:nth-child(3) {
+			border-width: 0 0 5px 5px;
+			bottom: 0;
+			left: 0;
+		}
+		.banner-full ol li:nth-child(4) {
+			border-width: 0 5px 5px 0;
+			bottom: 0;
+			right: 0;
+		}
+		.banner-full ul li:nth-child(1) {
+			border-width: 5px 0 0 0;
+			margin: 0 0 0 -12px;
+			top: 0;
+			left: 50%;
+		}
+		.banner-full ul li:nth-child(2) {
+			border-width: 0 5px 0 0;
+			margin: -12px 0 0 0;
+			top: 50%;
+			right: 0;
+		}
+		.banner-full ul li:nth-child(3) {
+			border-width: 0 0 5px 0;
+			margin: 0 -12px 0 0;
+			bottom: 0;
+			right: 50%;
+		}
+		.banner-full ul li:nth-child(4) {
+			border-width: 0 0 0 5px;
+			margin: 0 0 -12px 0;
+			bottom: 50%;
+			left: 0;
+		}
 		
-		<!-- banner -->
-		<div class="banner">
-			<div class="container">
-				<div class="banner-info animated wow zoomIn" data-wow-delay=".5s">
-					<h3>体验纯粹的美式健康生活</h3>
-					<h4>&nbsp;</h4>
-					<h4>&nbsp;</h4>
-					<div class="wmuSlider example1">
-						<div class="wmuSliderWrapper">
-							<article style="position: absolute; width: 100%; opacity: 0;">
-								<div class="banner-wrap">
-									<div class="banner-info1">
-										<p>The Most Trusted Name in the Kitchen</p>
-									</div>
-								</div>
-							</article>
-							<article style="position: absolute; width: 100%; opacity: 0;">
-								<div class="banner-wrap">
-									<div class="banner-info1">
-										<p>设计 + 质量 + 专业赞誉</p>
-									</div>
-								</div>
-							</article>
-							<article style="position: absolute; width: 100%; opacity: 0;">
-								<div class="banner-wrap">
-									<div class="banner-info1">
-										<p>Savor The Good Life</p>
-									</div>
-								</div>
-							</article>
-						</div>
-					</div>
-					<script src="js/jquery.wmuSlider.js"></script>
-					<script>
-						$('.example1').wmuSlider();
-					</script>
-				</div>
-			</div>
-		</div>
-		<!-- //banner -->
-		
-		<!-- 品牌介绍 -->
-		<div class="timer">
-			<div class="container">
-				<div class="timer-grids">
-					<div class="col-md-4 timer-grid-right animated wow slideInRight" data-wow-delay=".5s">
-						<div class="timer-grid-right1">
-							<img src="images/17.jpg" alt=" " class="img-responsive" />
-							<div class="timer-grid-left-pos">
-								<h4>品牌故事</h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-8 timer-grid-left animated wow slideInLeft" data-wow-delay=".5s">
-						<h3><a href="products.html">Cuisinart·美膳雅</a></h3>
-						<div class="new-collections-grid1-left simpleCart_shelfItem timer-grid-left-price">
-							<h4>
-							70年代，美国工程师Carl Sontheimer 的一次法国之旅，让他爱上了法国的风情和美食。回国后，他决定为专
-							业厨师设计烹饪工具，因而创立了厨具品牌Cuisinart。<br><br>
-							当时，Cuisinart以领先科技制造了“多功能食物处理器”系列，旋即风靡全国，成为每个家庭不可或缺的厨房好
-							帮手，并被媒体争相报道。<br><br>
-							时至今日， Cuisinart 在美国牢牢占据了厨房小家电和炊具的领导地位，年销售额超过10亿美元。<br><br>
-							美膳雅坚持“让消费者体验纯粹的美式健康生活”的理念;同时，在细节和技术上不断革新，精益求精;作为厨具专业品牌，美膳雅在产品工业设计界也具有深远影响。<br><br>
-							秉持“巨匠”精神，Cuisinart在产品细节上不断提升，希望 消费者在每天的产品使用中感受Cuisinart在细节上的用心。
-						</h4>
-							<p style="text-align: right;">
-								<a class="item_add timer_add" href="#">了解更多 </a>
-							</p>
-						</div>
+		.table-box {
+		    display: table;
+		    width: 100%;
+		    height: 100%;
+		}
+		.banner-bin .table-cell {
+		    position: relative;
+		}
+		.table-cell {
+		    display: table-cell;
+		    width: 100%;
+		    height: 100%;
+		    vertical-align: middle;
+		    text-align: center;
+		}
+		.banner-write {
+		    position: relative;
+		    z-index: 992;
+		    word-break: break-all;
+		    padding: 0 10px;
+		}
+		.banner-write .w1 {
+		    font-family: Microsoft JhengHei;
+		    color: #fff;
+		    font-size: 263px;
+		    display: inline-block;
+		    line-height: 0;
+		    text-shadow:4px 1px 1px #6D8D24;
+		}
+		.banner-write .w2 {
+		    text-align: left;
+		    display: inline-block;
+		    padding-left: 10px;
+		    text-shadow:1px 1px 0px #fff;
+		}
+		.banner-write .w2 .w21 {
+		    color: #000;
+		    font-size: 36px;
+		    display: block;
+		}
+		.banner-write .w2 .w22 {
+		    line-height: .8;
+		    letter-spacing: -5px;
+		    font-family: Helvetica;
+		    font-size: 82px;
+		    color: #6D8D24;
+		    display: inline-block;
+		    border-bottom: 1px solid #6D8D24;
+		    margin: 5px 0 10px 0;
+		}
+		.banner-write .w2 .w23 {
+		    color: #ccc;
+		    font-size: 16px;
+		    display: block;
+		}
+	</style>
+</head>
 
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			</div>
-		</div>
-		<!-- //品牌介绍 -->
-		
-		<!-- 分类栏 -->
-		<div class="banner-bottom">
-			<div class="container">
-				<div class="banner-bottom-grids">
-					<div class="banner-bottom-grid-left animated wow slideInLeft" data-wow-delay=".5s">
-						<div class="grid">
-							<figure class="effect-julia">
-								<img src="images/4.jpg" alt=" " class="img-responsive" />
-								<figcaption>
-									<h3>Cuisinart <span> 美膳雅 </span><i> savor the good life</i></h3>
-									<div>
-										<p>产品销往全球124个国家</p>
-										<p>美国95%的家庭至少拥有1个美膳雅产品</p>
-										<p>烹饪 + 艺术 = Cuisinart</p>
-									</div>
-								</figcaption>
-							</figure>
-						</div>
-					</div>
-					<div class="banner-bottom-grid-left1 animated wow slideInUp" data-wow-delay=".5s">
-
-						<div class="banner-bottom-grid-left-grid left1-grid grid-left-grid1">
-							<div class="banner-bottom-grid-left-grid1">
-								<img src="images/1.jpg" alt=" " class="img-responsive" />
-							</div>
-							<div class="banner-bottom-grid-left1-position">
-								<div class="banner-bottom-grid-left1-pos1">
-									<a href="products.html">
-										<p>带电类</p>
-									</a>
-								</div>
-							</div>
-						</div>
-						</a>
-
-						<div class="banner-bottom-grid-left-grid left1-grid grid-left-grid1">
-							<div class="banner-bottom-grid-left-grid1">
-								<img src="images/2.jpg" alt=" " class="img-responsive" />
-							</div>
-							<div class="banner-bottom-grid-left1-position">
-								<div class="banner-bottom-grid-left1-pos1">
-									<a href="products.html">
-										<p>非带电类</p>
-									</a>
-								</div>
-							</div>
-						</div>
-
-					</div>
-					<div class="banner-bottom-grid-right animated wow slideInRight" data-wow-delay=".5s">
-						<div class="banner-bottom-grid-left-grid grid-left-grid1">
-							<div class="banner-bottom-grid-left-grid1">
-								<img src="images/3.jpg" alt=" " class="img-responsive" />
-							</div>
-							<div class="grid-left-grid1-pos">
-								<p>甄选食谱 <span>邂逅美食</span></p>
-							</div>
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			</div>
-		</div>
-		<!-- //分类栏 -->
-		
-		<!-- 产品列表 -->
-		<div class="new-collections">
-			<div class="container">
-				<h3 class="animated wow zoomIn" data-wow-delay=".5s">新品上市</h3>
-				<p class="est animated wow zoomIn" data-wow-delay=".5s">Cuisinart在产品设计上更加注重人体工程学的简洁设计，增加产品的操作使用舒适度。</p>
-				<div class="new-collections-grids">
-					<div class="col-md-3 new-collections-grid">
-						<div class="new-collections-grid1 animated wow slideInUp" data-wow-delay=".5s">
-							<div class="new-collections-grid1-image">
-								<a href="single.html" class="product-image"><img src="images/7.jpg" alt=" " class="img-responsive" /></a>
-								<div class="new-collections-grid1-image-pos">
-									<a href="single.html">查看详情</a>
-								</div>
-							</div>
-							<h4><a href="single.html">多功能独立式蒸烤箱</a></h4>
-							<p>上市时间:2018年4月</p>
-							<div class="new-collections-grid1-left simpleCart_shelfItem">
-								<p>¥ 2,999元</p>
-							</div>
-						</div>
-						<div class="new-collections-grid1 animated wow slideInUp" data-wow-delay=".5s">
-							<div class="new-collections-grid1-image">
-								<a href="single.html" class="product-image"><img src="images/8.jpg" alt=" " class="img-responsive" /></a>
-								<div class="new-collections-grid1-image-pos">
-									<a href="single.html">查看详情</a>
-								</div>
-							</div>
-							<h4><a href="single.html">多功能便携式套装</a></h4>
-							<p>上市时间:2018年4月</p>
-							<div class="new-collections-grid1-left simpleCart_shelfItem">
-								<p>¥ 499元</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 new-collections-grid">
-						<div class="new-collections-grid1 new-collections-grid1-image-width animated wow slideInUp" data-wow-delay=".5s">
-							<div class="new-collections-grid1-image">
-								<a href="single.html" class="product-image"><img src="images/5.jpg" alt=" " class="img-responsive" /></a>
-								<div class="new-collections-grid1-image-pos new-collections-grid1-image-pos1">
-									<a href="single.html">查看详情</a>
-								</div>
-								<div class="new-one">
-									<p>New</p>
-								</div>
-							</div>
-							<h4><a href="single.html">Hurricane飓风系列 高速破壁料理机</a></h4>
-							<p>上市时间:2018年4月</p>
-							<div class="new-collections-grid1-left simpleCart_shelfItem">
-								<p>¥ 4,599元</p>
-							</div>
-						</div>
-						<div class="new-collections-grid-sub-grids">
-							<div class="new-collections-grid1-sub">
-								<div class="new-collections-grid1 animated wow slideInUp" data-wow-delay=".5s">
-									<div class="new-collections-grid1-image">
-										<a href="single.html" class="product-image"><img src="images/6.jpg" alt=" " class="img-responsive" /></a>
-										<div class="new-collections-grid1-image-pos">
-											<a href="single.html">查看详情</a>
+<body>
+    <div id="awd-site-wrap" class="bg bg-home">	
+		<div class="swiper-container">
+			<!--===========================
+				    顶部导航内容
+			============================-->
+			<div class="banner_top animated" data-animation="fadeInDown" data-animation-delay="100">
+		        <header id="awd-site-header">
+		            <div id="awd-site-logo" class="animated" data-animation="fadeInDown" data-animation-delay="1000">
+		                <img src="images/logo.png" style="width: 200px;"/>
+		            </div>
+		            <button class="menu-toggle animated" data-animation="fadeInDown" data-animation-delay="1000" data-role="toggle">
+		                <span></span>
+		                <span></span>
+		                <span></span>
+		            </button>
+		            <nav id="awd-site-nav" class="navigation animated" data-animation="fadeInDown" data-animation-delay="1000">
+		                <div class="nav-container">
+		                    <ul>
+		                        <li>
+		                            <a href="#" class="active">首页</a>
+		                        </li>
+		                        <li>
+		                            <a href="#">关于我们</a>
+		                        </li>
+		                        <li>
+		                            <a href="#">产品介绍</a>
+		                        </li>
+		                        <li>
+		                            <a href="#">甄选菜谱</a>
+		                        </li>
+		                        <li>
+		                            <a href="#">联系我们</a>
+		                        </li>
+		                    </ul>
+		                </div>
+		            </nav>
+		        </header>
+	       	</div>
+	       	<!--===========================
+				    轮播内容
+			============================-->
+			<!--页面配置-->
+			<div class="swiper-wrapper">
+				<div class="swiper-slide img_slide1">
+					<div class="banner-cut">
+						<div class="banner-bin swiper-lazy swiper-lazy-loaded swiper-slide-active">
+							<div class="banner-absolute">
+								<div class="table-box">
+									<div class="table-cell">
+										<div class="banner-write ">
+											<span class="w1 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">70</span>
+											<span class="w2 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+												<span class="w21">年专注 · 小家电</span>
+												<span class="w22">Cuisinart</span>
+												<span class="w23">始于 1978 年 美国<br>最值得信赖的厨房品牌</span>
+											</span>
 										</div>
 									</div>
-									<h4><a href="single.html">CookFresh健康电蒸锅</a></h4>
-									<p>上市时间:2018年6月</p>
-									<div class="new-collections-grid1-left simpleCart_shelfItem">
-										<p>¥ 1,799元</p>
-									</div>
 								</div>
-							</div>
-							<div class="new-collections-grid1-sub">
-								<div class="new-collections-grid1 animated wow slideInUp" data-wow-delay=".5s">
-									<div class="new-collections-grid1-image">
-										<a href="single.html" class="product-image"><img src="images/9.jpg" alt=" " class="img-responsive" /></a>
-										<div class="new-collections-grid1-image-pos">
-											<a href="single.html">查看详情</a>
-										</div>
-										<div class="new-collections-grid1-right">
-											<div class="rating">
-												<div class="rating-left">
-													<img src="images/2.png" alt=" " class="img-responsive" />
-												</div>
-												<div class="rating-left">
-													<img src="images/1.png" alt=" " class="img-responsive" />
-												</div>
-												<div class="rating-left">
-													<img src="images/1.png" alt=" " class="img-responsive" />
-												</div>
-												<div class="rating-left">
-													<img src="images/1.png" alt=" " class="img-responsive" />
-												</div>
-												<div class="rating-left">
-													<img src="images/1.png" alt=" " class="img-responsive" />
-												</div>
-												<div class="clearfix"> </div>
-											</div>
-										</div>
-									</div>
-									<h4><a href="single.html">华夫机</a></h4>
-									<p>上市时间:2018年7月</p>
-									<div class="new-collections-grid1-left simpleCart_shelfItem">
-										<p>¥ 699元</p>
-									</div>
+								<div class="banner-full visible-lg-block ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+									<ol class="list-paddingleft-2">
+										<li>
+											<p><br></p>
+										</li>
+										<li>
+											<p><br></p>
+										</li>
+										<li>
+											<p><br></p>
+										</li>
+										<li>
+											<p><br></p>
+										</li>
+									</ol>
+									<ul class="list-paddingleft-2">
+										<li>
+											<p><br></p>
+										</li>
+										<li>
+											<p><br></p>
+										</li>
+										<li>
+											<p><br></p>
+										</li>
+										<li>
+											<p><br></p>
+										</li>
+									</ul>
 								</div>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-					</div>
-					<div class="col-md-3 new-collections-grid">
-						<div class="new-collections-grid1 animated wow slideInUp" data-wow-delay=".5s">
-							<div class="new-collections-grid1-image">
-								<a href="single.html" class="product-image"><img src="images/10.jpg" alt=" " class="img-responsive" /></a>
-								<div class="new-collections-grid1-image-pos">
-									<a href="single.html">查看详情</a>
-								</div>
-							</div>
-							<h4><a href="single.html">高速破壁料理机</a></h4>
-							<p>上市时间:2018年10月</p>
-							<div class="new-collections-grid1-left simpleCart_shelfItem">
-								<p>¥ 2,599元</p>
-							</div>
-						</div>
-						<div class="new-collections-grid1 animated wow slideInUp" data-wow-delay=".5s">
-							<div class="new-collections-grid1-image">
-								<a href="single.html" class="product-image"><img src="images/11.jpg" alt=" " class="img-responsive" /></a>
-								<div class="new-collections-grid1-image-pos">
-									<a href="single.html">查看详情</a>
-								</div>
-							</div>
-							<h4><a href="single.html">智能变速手持式搅拌棒</a></h4>
-							<p>上市时间:2018年10月</p>
-							<div class="new-collections-grid1-left simpleCart_shelfItem">
-								<p>¥ 699元</p>
 							</div>
 						</div>
 					</div>
-					<div class="clearfix"> </div>
 				</div>
+				<div class="swiper-slide img_slide2">Slide 2</div>
+				<div class="swiper-slide img_slide3">Slide 3</div>
+			</div>
+			<!--分页器-->
+			<div class="swiper-pageination animated" data-animation="fadeInLeft" data-animation-delay="100">
+				<span class="swiper-pagination-bullet-active"></span>
+			</div>
+			<!--===========================
+				    底部信息内容
+			============================-->
+			<div class="banner-bottom animated" data-animation="fadeInUp" data-animation-delay="100">
+				<footer id="awd-site-footer">
+		            <div class="copyright animated" data-animation="fadeInUp" data-animation-delay="1000">
+		                <p>© 2018 Cuisinart - All Rights Reserved</p>
+		            </div>
+		            <nav class="social-icons animated" data-animation="fadeInUp" data-animation-delay="1000">
+		                <ul>
+		                    <li title="京东">
+		                        <a href="###">
+		                            <img src="images/jd.png">
+		                        </a>
+		                    </li>
+												<li title="苏宁易购">
+		                        <a href="###">
+		                            <img src="images/suning.png">
+		                        </a>
+		                    </li>
+												<li title="天猫">
+		                        <a href="###">
+		                            <img src="images/TMall.png">
+		                        </a>
+		                    </li>
+		                    <li title="微信">
+		                        <a href="###">
+		                            <img src="images/WeChat.png">
+		                        </a>
+		                    </li>
+		                </ul>
+		           </nav>
+		        </footer>
 			</div>
 		</div>
-		<!-- //产品列表 -->
-		
-		<!-- 甄选食谱 -->
-		<div class="new-collections" style="background-color: #fff;">
-			<div class="container">
-				<h3 class="animated wow zoomIn" data-wow-delay=".5s">甄选食谱</h3>
-				<p class="est animated wow zoomIn" data-wow-delay=".5s">Cuisinart在产品设计上更加注重人体工程学的简洁设计，增加产品的操作使用舒适度。</p>
-				<div class="collections-bottom-grids wow zoomIn">
-				</div>
-				<div class="new-collections-grids">
-					<div class="col-md-3 new-collections-grid">
-						<div class="new-collections-grid1 animated wow slideInUp" style="background-color: #F7F7F9;" data-wow-delay=".5s">
-							<div class="new-collections-grid1-image">
-								<a href="single.html" class="product-image"><img src="images/35.jpg" alt=" " class="img-responsive" /></a>
-								<div class="new-collections-grid1-image-pos">
-									<a href="single.html">查看食谱</a>
-								</div>
-							</div>
-							<h4><a href="single.html">蒜薹炒猪肝</a></h4>
-							<p>猪肝滑嫩爽口，忍不住要敞开大吃三碗饭！颜值也上得了厅堂。</p>
-							<div class="rating">
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/1.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/1.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="new-collections-grid1-left simpleCart_shelfItem">
-								<p>
-									<a class="item_add" href="#">查看食谱 </a>
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 new-collections-grid">
-						<div class="new-collections-grid1 new-collections-grid1-image-width animated wow slideInUp" style="background-color: #F7F7F9;" data-wow-delay=".5s">
-							<div class="new-collections-grid1-image">
-								<a href="single.html" class="product-image"><img src="images/37.jpg" alt=" " class="img-responsive" /></a>
-								<div class="new-collections-grid1-image-pos new-collections-grid1-image-pos1">
-									<a href="single.html">查看食谱</a>
-								</div>
-								<div class="new-one">
-									<p>New</p>
-								</div>
-							</div>
-							<h4><a href="single.html">菌香焖麻鸭</a></h4>
-							<p>正当季的鲜嫩菌菇，配上肉质有嚼劲的麻鸭，家常下饭好味道。</p>
-							<div class="rating">
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/1.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/1.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="new-collections-grid1-left simpleCart_shelfItem">
-								<p>
-									<a class="item_add" href="#">查看食谱</a>
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 new-collections-grid">
-						<div class="new-collections-grid1 animated wow slideInUp" style="background-color: #F7F7F9;" data-wow-delay=".5s">
-							<div class="new-collections-grid1-image">
-								<a href="single.html" class="product-image"><img src="images/36.jpg" alt=" " class="img-responsive" /></a>
-								<div class="new-collections-grid1-image-pos">
-									<a href="single.html">查看食谱</a>
-								</div>
-							</div>
-							<h4><a href="single.html">火爆腰花</a></h4>
-							<p>保持腰花口感鲜嫩的秘籍！在家也能做出完美的麦穗状腰花</p>
-							<div class="rating">
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/1.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/1.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="new-collections-grid1-left simpleCart_shelfItem">
-								<p>
-									<a class="item_add" href="#">查看食谱</a>
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			</div>
-		</div>
-		<!-- //甄选食谱 -->
-		
-		<!-- 尾部 -->
-		<div class="footer">
-			<div class="container">
-				<div class="footer-logo animated wow slideInLeft" data-wow-delay=".5s">
-					<h2><a href="index.html">Cuisinart <span>savor the good life</span></a></h2>
-				</div>
-				<div class="copy-right animated wow slideInRight" data-wow-delay=".5s">
-					<p>Copyright &copy; 2018.Company name All rights reserved.More Templates - Collect from</p>
-				</div>
-			</div>
-		</div>
-		<!-- //尾部 -->
-		
-	</body>
+    </div>
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/vendor.js"></script>
+    <script type="text/javascript" src="js/options.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/swiper.animate1.0.3.min.js"></script>
+	<script>
+		var myswiper = new Swiper('.swiper-container',{
+			//autoplay: true, 					//开启自动轮播
+			parallax : true,
+			updateOnImagesReady : true,
+			//loop : true,						//轮播环路
+			pagination: { 					//分页器配置
+				el: '.swiper-pageination',	//CSS样式选择
+				dynamicBullets: true, 		//动态显示
+				clickable :true,				//分页器可点击
+			},
+			on:{
+		      	init: function(){
+			    		swiperAnimateCache(this); //隐藏动画元素 
+			    		swiperAnimate(this); //初始化完成开始动画
+			    }, 
+			    slideChangeTransitionEnd: function(){ 
+			        swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+			    } 
+		    }
+//			on: { //获取当前轮播索引页,并根据该索引进行控制页面内容
+//				slideChangeTransitionStart: function(){
+//					silde = this.activeIndex;
+//					
+//					if(silde == 1){
+//						$("#awd-site-nav").css("color","red");
+//						$('#awd-site-logo img').attr("src", "images/logo-b.png");
+//					}else if(silde == 2){
+//						$("#awd-site-nav").css("color","#FFF");
+//						$('#awd-site-logo img').attr("src", "images/logo.png");
+//					}else if(silde == 0){
+//						$("#awd-site-nav").css("color","#FFF");
+//						$('#awd-site-logo img').attr("src", "images/logo.png");
+//					}
+//				},
+//			},
+		});
+	</script>
+</body>
 
 </html>
