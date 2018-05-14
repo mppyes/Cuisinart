@@ -270,7 +270,7 @@ strong {
 }
 /*轮播背景图*/
 #awd-site-wrap .img_slide1{
-    background: url('../images/index_banner/1.jpg') no-repeat;
+    background: url('../images/index_banner/2.png') no-repeat;
 }
 #awd-site-wrap .img_slide2{
 	background: url('../images/index_banner/2.png') no-repeat;
@@ -279,7 +279,7 @@ strong {
 	background: url('../images/index_banner/3.jpg') no-repeat;
 }
 #awd-site-wrap .img_slide4{
-	background: url('../images/index_banner/4.jpg') no-repeat;  
+	background: url('../images/index_banner/2.png') no-repeat;  
 }
 #awd-site-wrap .img_slide1 , #awd-site-wrap .img_slide2 , #awd-site-wrap .img_slide3 , #awd-site-wrap .img_slide4{
 	background-size:cover;
