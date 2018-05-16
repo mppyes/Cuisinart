@@ -22,8 +22,7 @@
 08. about内容页
 09. product_list内容页
 10. product内容页
-11. recipes内容页
-12. recipes_details内容页
+11. contact_us内容页
 11. 页脚
 12. 动画
 13. 响应式适配
@@ -225,6 +224,8 @@ strong {
     width: 100%;
     height: 75px;
     padding: 0 .9em;
+    position: absolute;
+    z-index: 3;
 }
 
 #awd-site-logo {
@@ -237,6 +238,156 @@ strong {
 	margin-top: 5px;
 }
 
+.top-header.countact-us-header {
+    background: url(../images/recipes/2.jpg) top center no-repeat;
+    background-size: cover;
+}
+.with-bottom-effect {
+    position: relative;
+    overflow: hidden;
+}
+.dark {
+    position: relative;
+}
+.top-header {
+    min-height: 475px;
+    width: 100%;
+}
+.with-bottom-effect:before {
+    content: "";
+    -webkit-box-shadow: inset 0px -12px 13px -2px white;
+    -moz-box-shadow: inset 0px -12px 13px -2px white;
+    box-shadow: inset 0px -12px 13px -2px white;
+    display: block;
+    width: 100%;
+    position: absolute;
+    z-index: 11;
+    bottom: 0;
+    height: 30px;
+}
+
+.dark.dark-strong:after {
+    opacity: 0.5;
+}
+.dark:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #000000;
+    opacity: 0.6;
+    z-index: 1;
+}
+effect.transparent-effect .bottom-effect {
+    position: absolute;
+    z-index: 10;
+    bottom: -50px;
+    width: 2500px;
+    height: 148px;
+    left: -100px;
+    background: rgba(255, 255, 255, 0.6);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    padding-top: 10px;
+}
+.with-bottom-effect .bottom-effect {
+    position: absolute;
+    z-index: 10;
+    bottom: -50px;
+    width: 2500px;
+    height: 148px;
+    left: -100px;
+    background: #fff;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    padding-top: 10px;
+}
+.with-bottom-effect.transparent-effect .bottom-effect:after {
+    content: '';
+    display: block;
+    background: rgba(255, 255, 255, 0.9);
+    height: 148px;
+    -webkit-box-shadow: inset 0px -12px 13px -2px white;
+    -moz-box-shadow: inset 0px -12px 13px -2px white;
+    box-shadow: inset 0px -12px 13px -2px white;
+}
+.with-bottom-effect.transparent-effect .bottom-effect {
+    position: absolute;
+    z-index: 10;
+    bottom: -200px;
+    height: 148px;
+    left: -100px;
+    background: rgba(255, 255, 255, 0.9);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    padding-top: 10px;
+}
+.with-bottom-effect .bottom-effect:after {
+    content: '';
+    display: block;
+    background: #fff;
+    height: 148px;
+}
+.top-header .header-container {
+    position: relative;
+    z-index: 2;
+}
+.top-header .header-container .header-title {
+    text-align: center;
+    padding-top: 215px;
+    padding-bottom: 30px;
+}
+.top-header .header-container .header-title .header-icon {
+    display: block;
+    margin: 0 auto 15px;
+}
+.top-header .header-container .header-title .header-icon .icon {
+    font-size: 40px;
+    color: #fff;
+}
+.top-header .header-container .header-title .title {
+    font-size: 38px;
+    margin-bottom: 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.top-header .header-container .header-title em {
+    font-size: 16px;
+    color: #999999;
+}
+em {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #999999;
+    font-size: 13px;
+}
+.header-container .header-title .title font:before,.header-container .header-title .title font:after{
+	position: absolute;
+    top: 85%;
+    width: 10%;
+    height: 1px;
+    background: #D5D5D5;
+    content: '';
+}
+.header-container .header-title .title font:before{
+	left: 28%
+}
+.header-container .header-title .title font:after{
+	right: 28%;
+}
+
 /*====================================================
 07. 导航
 ====================================================*/
@@ -246,16 +397,17 @@ strong {
     float: right;
 }
 .banner_top{
+	width: 100%;
 	height: 75px;
+	background-color: rgb(0,0,0,.6);
 }
 .banner-bottom{ 
+	width: 100%;
+	background-color: #333;
 	height: 50px;
 	padding: 0 1.5em;
 }
-.banner_top , .banner-bottom{
-	background-color: #333;
-	width: 100%;
-}
+
 /*移动端导航*/
 .menu-toggle {
     display: none;
@@ -373,7 +525,7 @@ strong {
 	top: 0px
 }
 .nav-down-menu{
-	background-color: #333;
+	background-color: rgb(0,0,0,.6);
 }
 .navigation-down .nav-down-menu .navigation-down-inner {
 	margin: auto;
@@ -972,8 +1124,8 @@ ul.paging {
     text-align: right;
 }
 .paging > .active > a, .paging > .active > a:hover {
-    background-color: #ffc229;
-    border-color: #EDB62B;
+    background-color: #6D8D24;
+    border-color: #6D8D24;
 }
 .pagination > li > a {
     color: #212121;
@@ -1250,173 +1402,106 @@ p.est {
     border: 1px solid;
 }
 /*====================================================
-11. recipes内容页
+11. contact_us内容页
 ====================================================*/
-.top-header.countact-us-header {
-    background: url(../images/cookbook/1.jpg) top center no-repeat;
+#contact_us .contact_us_left{
+	width: 90%;
+}
+
+#contact_us .contact_us_left h3{
+	border-bottom: 1px solid #6D8D24;
+	color: #6D8D24;
+	width:100%;
+	height: 30px;
+	font-weight: bold;
+}
+#contact_us .contact_us_left p{
+	font-size: 16px;
+	color: #333;
+	line-height: 1.8;
+}
+#contact_us .contact_us_left_map{
+	padding: 5px;
+	border: 1px solid #6D8D24;
+}
+
+/*====================================================
+12. recipes内容页
+====================================================*/
+.top-header.recipes-header{
+	background: url(../images/recipes/1.jpg) top center no-repeat;
     background-size: cover;
 }
-.with-bottom-effect {
+.recipes-pages {
+    background-color: #fff;
+    background: url(../images/recipes/bg-1.jpg) no-repeat scroll right 0;
+}
+.recipes-pages img {
+    max-width: 100%;
+}
+.ptb-80 {
+    padding: 80px 0;
+}
+.recipes-pages .bg-mg-1 {
+    background: url(../images/recipes/bg-2.png) no-repeat scroll left bottom;
+}
+.single-recipes {
+    height: 240px;
+}
+.single-recipes, .recipes-img {
     position: relative;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.recipes-thumbnail img {
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.recipes-desc {
+    background: #fff none repeat scroll 0 0;
+    bottom: 0;
+    box-shadow: -1px 0 7px rgba(0, 0, 0, 0.2);
+    left: 10px;
     overflow: hidden;
-}
-.dark {
-    position: relative;
-}
-.top-header {
-    min-height: 475px;
-    width: 100%;
-}
-.with-bottom-effect:before {
-    content: "";
-    -webkit-box-shadow: inset 0px -12px 13px -2px white;
-    -moz-box-shadow: inset 0px -12px 13px -2px white;
-    box-shadow: inset 0px -12px 13px -2px white;
-    display: block;
-    width: 100%;
     position: absolute;
-    z-index: 11;
-    bottom: 0;
-    height: 30px;
+    right: 10px;
+    z-index: 99;
 }
-
-.dark.dark-strong:after {
-    opacity: 0.5;
+.publish-date {
+    background: #6D8D24 none repeat scroll 0 0;
+    float: left;
+    padding: 16px 0;
+    width: 60px;
 }
-.dark:after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: #000000;
-    opacity: 0.6;
-    z-index: 1;
-}
-effect.transparent-effect .bottom-effect {
-    position: absolute;
-    z-index: 10;
-    bottom: -50px;
-    width: 2500px;
-    height: 148px;
-    left: -100px;
-    background: rgba(255, 255, 255, 0.6);
-    -webkit-transform: rotate(-3deg);
-    -moz-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    -o-transform: rotate(-3deg);
-    transform: rotate(-3deg);
-    padding-top: 10px;
-}
-.with-bottom-effect .bottom-effect {
-    position: absolute;
-    z-index: 10;
-    bottom: -50px;
-    width: 2500px;
-    height: 148px;
-    left: -100px;
-    background: #fff;
-    -webkit-transform: rotate(-3deg);
-    -moz-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    -o-transform: rotate(-3deg);
-    transform: rotate(-3deg);
-    padding-top: 10px;
-}
-.with-bottom-effect.transparent-effect .bottom-effect:after {
-    content: '';
-    display: block;
-    background: rgba(255, 255, 255, 0.9);
-    height: 148px;
-    -webkit-box-shadow: inset 0px -12px 13px -2px white;
-    -moz-box-shadow: inset 0px -12px 13px -2px white;
-    box-shadow: inset 0px -12px 13px -2px white;
-}
-.with-bottom-effect.transparent-effect .bottom-effect {
-    position: absolute;
-    z-index: 10;
-    bottom: -50px;
-    width: 2500px;
-    height: 148px;
-    left: -100px;
-    background: rgba(255, 255, 255, 0.6);
-    -webkit-transform: rotate(-3deg);
-    -moz-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    -o-transform: rotate(-3deg);
-    transform: rotate(-3deg);
-    padding-top: 10px;
-}
-.with-bottom-effect .bottom-effect:after {
-    content: '';
-    display: block;
-    background: #fff;
-    height: 148px;
-}
-.top-header .header-container {
-    position: relative;
-    z-index: 2;
-}
-.top-header .header-container .header-title {
+.publish-date > p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 13px;
+    margin: 0;
     text-align: center;
-    padding-top: 215px;
-    padding-bottom: 30px;
-}
-.top-header .header-container .header-title .header-icon {
-    display: block;
-    margin: 0 auto 15px;
-}
-.top-header .header-container .header-title .header-icon .icon {
-    font-size: 40px;
-    color: #fff;
-}
-.icon {
-    font-family: 'Stroke-Gap-Icons';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.icon-Wheelbarrow:before {
-    content: "\e664";
-}
-.top-header .header-container .header-title .title {
-    font-size: 38px;
-    margin-bottom: 5px;
-    color: #fff;
     text-transform: uppercase;
 }
-.top-header .header-container .header-title em {
-    font-size: 16px;
-    color: #999999;
+.publish-date > p span {
+    display: block;
+    margin-top: 5px;
 }
-em {
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    color: #999999;
-    font-size: 13px;
+.recipes-title {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 23px 0;
 }
-/*====================================================
-12. recipes_details内容页
-====================================================*/
-.badge {
-    /*padding: 2px 5px;*/
-    font-size: 12px;
-    background-color: #6D8D24;
-    /*border-radius: 10px;*/
-    /*font-weight: 300;*/
-    color: white;
-    letter-spacing: 2px;
-    /*box-shadow: 1px 1px 1px gainsboro;*/
-    margin: 0 !important;
+.recipes-title > h3 {
+    color: #6D8D24;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
 }
-
+.recipes-title > h3 a:hover {
+    color: #535353;
+}
 /*====================================================
 09. 页脚
 ====================================================*/
@@ -1468,6 +1553,25 @@ em {
 /*====================================================
 11. 响应式适配
 ====================================================*/
+
+@media (max-width: 1199px) and (min-width: 992px){
+	.single-recipes {
+	    height: 197px;
+	}
+	.publish-date {
+	    width: 45px;
+	}
+	.recipes-title {
+	    margin-left: 10px;
+	}
+	.publish-date > p {
+	    font-size: 14px;
+	}
+	.recipes-title > h3 {
+	    font-size: 13px;
+	}	
+}
+
 @media only screen and (max-width: 992px) {
     #awd-site-logo > h1 {
         font-size: 46px;
@@ -1504,6 +1608,29 @@ em {
 }
 
 @media only screen and (max-width: 768px) {
+	.container {
+    		width: 300px;
+	}
+	.ptb-80 {
+    		padding: 35px 0;
+	}
+	.recipes-title {
+    		margin-left: 5px;
+	}
+	.recipes-title > h3 {
+    		font-size: 12px;
+	}
+	.publish-date > p {
+    		font-size: 14px;
+	}
+	.publish-date {
+    		padding: 15px 0;
+    		width: 45px;
+	}
+    .single-recipes {
+    		height: 190px;
+    		margin-bottom: 35px;
+	}
     .img_slide1 {
     		background: url('../images/3.jpg') no-repeat;
     		background-size:cover;
@@ -1686,6 +1813,25 @@ em {
     .single-right-left h4{
     		font-size: 1em;
     }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 480px){
+	.single-recipes {
+    		height: 270px;
+	}
+	.recipes-thumbnail img {
+    		width: 100%;
+	}
+	.publish-date {
+    		padding: 16px 0;
+    		width: 55px;
+	}
+	.ptb-80 {
+    		padding: 40px 0;
+	}
+	.container {
+    		width: 450px;
+	}
 }
 
 @media only screen and (max-width: 480px) {
