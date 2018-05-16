@@ -1,274 +1,139 @@
 <!DOCTYPE html>
 
 <head>
-    <title>HTML5网站即将上线单页面特效 - 站长素材</title>
-    <!-- META DATA -->
+    <title>Cuisinart·美膳雅 - 中国官网</title>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
-    <!-- CSS Global Compulsory -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/swiper.min.css">
-	
-    <!--<link rel="stylesheet" href="css/custom.css">-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
-    <!-- FAVICONS -->
-    <link rel="shortcut icon" href="img/favicon.png">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
-	<style>
-		.swiper-container {
-		  width: 100%;
-		  height: 100%;
-		}
-		.swiper-slide {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-		.swiper-slide img{
-			width: 100%;
-			height:100%;
-		}
-		.swiper-pageination{
-			position: absolute;
-    			text-align: center;
-    			-webkit-transition: .3s opacity;
-    			-o-transition: .3s opacity;
-    			transition: .3s opacity;
-    			-webkit-transform: translate3d(0,0,0);
-    			transform: translate3d(0,0,0);
-    			z-index: 10;
-    			bottom: 80px;
-    			left: 40px;
-    			right: 40px;
-    			height: 30px;
-    			line-height: 30px;
-		}
-		.swiper-pagination-bullet-active-main{
-    			opacity: 10;
-		    background: #FFF;
-		}
-		.banner_top , .banner-bottom{
-			background-color: #333;
-			background-color:rgba(0,0,0,0.5);
-			height: 80px;
-			width: 100%;
-			position: absolute;
-			z-index: 2;
-		}
-		.banner-bottom{
-			position: fixed; /*or前面的是absolute就可以用*/  
-       		bottom: 0px; 
-		}
-		/**/
-		.banner-cut {
-			width: 100%;
-			height: 100%;
-		}
-		.banner-bin {
-			width: 100%;
-			height: 100%;
-			float: left;
-			display: block;
-			overflow: hidden;
-			background: center no-repeat;
-			background-size: cover;
-			position: relative;
-		}
-		.banner-absolute {
-			position: absolute;
-			width: 100%;
-			height: 94%;
-			top: 0;
-			left: 0;
-		}
-		.banner-full {
-			width: 800px;
-			height: 350px;
-			position: absolute;
-			border: 2000px solid rgba(0, 0, 0, .4);
-			box-sizing: content-box;
-			margin: -2175px 0 0 -2400px;
-			background: none;
-			left: 50%;
-			top: 50%;
-			z-index: 991;
-		}
-		.banner-full ol,
-		.banner-full ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-		}
-		.banner-full ol li:nth-child(1) {
-			border-width: 5px 0 0 5px;
-			top: 0;
-			left: 0;
-		}
-		.banner-full ol li,
-		.banner-full ul li {
-			border-color: #6D8D24;
-			border-style: solid;
-			border-width: 0;
-			position: absolute;
-			width: 24px;
-			height: 24px;
-		}
-		.banner-full ol li:nth-child(2) {
-			border-width: 5px 5px 0 0;
-			top: 0;
-			right: 0;
-		}
-		.banner-full ol li:nth-child(3) {
-			border-width: 0 0 5px 5px;
-			bottom: 0;
-			left: 0;
-		}
-		.banner-full ol li:nth-child(4) {
-			border-width: 0 5px 5px 0;
-			bottom: 0;
-			right: 0;
-		}
-		.banner-full ul li:nth-child(1) {
-			border-width: 5px 0 0 0;
-			margin: 0 0 0 -12px;
-			top: 0;
-			left: 50%;
-		}
-		.banner-full ul li:nth-child(2) {
-			border-width: 0 5px 0 0;
-			margin: -12px 0 0 0;
-			top: 50%;
-			right: 0;
-		}
-		.banner-full ul li:nth-child(3) {
-			border-width: 0 0 5px 0;
-			margin: 0 -12px 0 0;
-			bottom: 0;
-			right: 50%;
-		}
-		.banner-full ul li:nth-child(4) {
-			border-width: 0 0 0 5px;
-			margin: 0 0 -12px 0;
-			bottom: 50%;
-			left: 0;
-		}
-		
-		.table-box {
-		    display: table;
-		    width: 100%;
-		    height: 100%;
-		}
-		.banner-bin .table-cell {
-		    position: relative;
-		}
-		.table-cell {
-		    display: table-cell;
-		    width: 100%;
-		    height: 100%;
-		    vertical-align: middle;
-		    text-align: center;
-		}
-		.banner-write {
-		    position: relative;
-		    z-index: 992;
-		    word-break: break-all;
-		    padding: 0 10px;
-		}
-		.banner-write .w1 {
-		    font-family: Microsoft JhengHei;
-		    color: #fff;
-		    font-size: 263px;
-		    display: inline-block;
-		    line-height: 0;
-		    text-shadow:4px 1px 1px #6D8D24;
-		}
-		.banner-write .w2 {
-		    text-align: left;
-		    display: inline-block;
-		    padding-left: 10px;
-		    text-shadow:1px 1px 0px #fff;
-		}
-		.banner-write .w2 .w21 {
-		    color: #000;
-		    font-size: 36px;
-		    display: block;
-		}
-		.banner-write .w2 .w22 {
-		    line-height: .8;
-		    letter-spacing: -5px;
-		    font-family: Helvetica;
-		    font-size: 82px;
-		    color: #6D8D24;
-		    display: inline-block;
-		    border-bottom: 1px solid #6D8D24;
-		    margin: 5px 0 10px 0;
-		}
-		.banner-write .w2 .w23 {
-		    color: #ccc;
-		    font-size: 16px;
-		    display: block;
-		}
-	</style>
 </head>
 
 <body>
     <div id="awd-site-wrap" class="bg bg-home">	
+    		<!--===========================
+				  顶部导航内容
+		============================-->
+		<div class="banner_top animated" data-animation="fadeInDown" data-animation-delay="100">
+	        <header id="awd-site-header">
+	            <div id="awd-site-logo" class="animated" data-animation="fadeInDown" data-animation-delay="1000">
+	                <img src="images/logo.png"/>
+	            </div>
+	            <button class="menu-toggle animated" data-animation="fadeInDown" data-animation-delay="1000" data-role="toggle">
+	                <span></span>
+	                <span></span>
+	                <span></span>
+	            </button>
+	            <nav id="awd-site-nav" class="navigation animated" data-animation="fadeInDown" data-animation-delay="1000">
+	                <div class="nav-container">
+	                    <ul>
+	                        <li>
+	                            <a href="index.html" class="active" style="text-align: center;">首页<p>HOME</p></a>
+	                        </li>
+	                        <li>
+	                            <a href="about.html" style="text-align: center;">关于我们<p>About us</p></a>
+	                        </li>
+	                        <li class="" _t_nav="product">
+	                            <a href="#">产品介绍<i class="fa fa-sort-desc fa-fw"></i><p>Products</p></a>
+	                        </li>
+	                        <li>
+	                            <a href="recipes.html" style="text-align: center;">甄选菜谱<p>Recipes</p></a>
+	                        </li>
+	                        <li>
+	                            <a href="Contact_us.html" style="text-align: center;">联系我们<p>Contact us</p></a>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </nav>
+	            <div class="navigation-down">
+					<div id="product" class="nav-down-menu menu-1" style="display: none;" _t_nav="product">
+						<div class="navigation-down-inner">
+							<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+								<dt>美食烹饪</dt>
+								<dd>
+									<a href="product_list.html">电蒸锅</a>
+								</dd>
+								<dd>
+									<a href="product_list.html">蒸汽烤箱</a>
+								</dd>
+								<dd>
+									<a href="product_list.html">热风炉</a>
+								</dd>
+								<dd>
+									<a href="product_list.html">电饼档</a>
+								</dd>
+								<dd>
+									<a href="product_list.html">立式华夫机</a>
+								</dd>
+								<dd>
+									<a href="product_list.html">吐司机</a>
+								</dd>
+							</dl>
+							<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+								<dt>食材预处理</dt>
+								<dd>
+									<a href="product_list.html">厨师机及附件</a>
+								</dd>
+								<dd>
+									<a href="product_list.html">手持式搅拌棒</a>
+								</dd>
+								<dd>
+									<a href="product_list.html">破壁机</a>
+								</dd>
+								<dd>
+									<a href="product_list.html">搅拌机</a>
+								</dd>
+							</dl>
+							<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+								<dt>咖啡&酒&茶饮</dt>
+								<dd>
+									<a href="product_list.html">美式自动研磨咖啡机</a>
+								</dd>
+								<dd>
+									<a href="product_list.html">独立式红酒柜</a>
+								</dd>
+								<dd>
+									<a href="product_list.html">电水壶</a>
+								</dd>
+							</dl>
+							<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+								<dt>锅具&烘焙用具</dt>
+								<dd>
+									<a href="product_list.html">锅具</a>
+								</dd>
+							</dl>
+							<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+								<dt>餐具&厨具</dt>
+								<dd>
+									<a href="product_list.html">彩色刀具</a>
+								</dd>
+								<dd>
+									<a href="product_list.html">不锈钢专业刀具</a>
+								</dd>
+							</dl>
+							<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+								<dt>厨房小工具</dt>
+								<dd>
+									<a href="product_list.html">调酒酒具</a>
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+	        </header>
+       	</div>
+	     
+     	<!--===========================
+			    轮播内容
+		============================-->
 		<div class="swiper-container">
-			<!--===========================
-				    顶部导航内容
-			============================-->
-			<div class="banner_top animated" data-animation="fadeInDown" data-animation-delay="100">
-		        <header id="awd-site-header">
-		            <div id="awd-site-logo" class="animated" data-animation="fadeInDown" data-animation-delay="1000">
-		                <img src="images/logo.png" style="width: 200px;"/>
-		            </div>
-		            <button class="menu-toggle animated" data-animation="fadeInDown" data-animation-delay="1000" data-role="toggle">
-		                <span></span>
-		                <span></span>
-		                <span></span>
-		            </button>
-		            <nav id="awd-site-nav" class="navigation animated" data-animation="fadeInDown" data-animation-delay="1000">
-		                <div class="nav-container">
-		                    <ul>
-		                        <li>
-		                            <a href="#" class="active">首页</a>
-		                        </li>
-		                        <li>
-		                            <a href="#">关于我们</a>
-		                        </li>
-		                        <li>
-		                            <a href="#">产品介绍</a>
-		                        </li>
-		                        <li>
-		                            <a href="#">甄选菜谱</a>
-		                        </li>
-		                        <li>
-		                            <a href="#">联系我们</a>
-		                        </li>
-		                    </ul>
-		                </div>
-		            </nav>
-		        </header>
-	       	</div>
-	       	<!--===========================
-				    轮播内容
-			============================-->
 			<!--页面配置-->
 			<div class="swiper-wrapper">
 				<div class="swiper-slide img_slide1">
-					<div class="banner-cut">
+					<!--<div class="banner-cut">
 						<div class="banner-bin swiper-lazy swiper-lazy-loaded swiper-slide-active">
 							<div class="banner-absolute">
 								<div class="table-box">
@@ -315,49 +180,52 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div>-->
 				</div>
-				<div class="swiper-slide img_slide2">Slide 2</div>
-				<div class="swiper-slide img_slide3">Slide 3</div>
+				<div class="swiper-slide img_slide2"></div>
+				<div class="swiper-slide img_slide3"></div>
+				<div class="swiper-slide img_slide4"></div>
+				
 			</div>
 			<!--分页器-->
 			<div class="swiper-pageination animated" data-animation="fadeInLeft" data-animation-delay="100">
 				<span class="swiper-pagination-bullet-active"></span>
 			</div>
-			<!--===========================
-				    底部信息内容
-			============================-->
-			<div class="banner-bottom animated" data-animation="fadeInUp" data-animation-delay="100">
-				<footer id="awd-site-footer">
-		            <div class="copyright animated" data-animation="fadeInUp" data-animation-delay="1000">
-		                <p>© 2018 Cuisinart - All Rights Reserved</p>
-		            </div>
-		            <nav class="social-icons animated" data-animation="fadeInUp" data-animation-delay="1000">
-		                <ul>
-		                    <li title="京东">
-		                        <a href="###">
-		                            <img src="images/jd.png">
-		                        </a>
-		                    </li>
-												<li title="苏宁易购">
-		                        <a href="###">
-		                            <img src="images/suning.png">
-		                        </a>
-		                    </li>
-												<li title="天猫">
-		                        <a href="###">
-		                            <img src="images/TMall.png">
-		                        </a>
-		                    </li>
-		                    <li title="微信">
-		                        <a href="###">
-		                            <img src="images/WeChat.png">
-		                        </a>
-		                    </li>
-		                </ul>
-		           </nav>
-		        </footer>
-			</div>
+		</div>
+		
+		<!--===========================
+			    底部信息内容
+		============================-->
+		<div class="banner-bottom animated" data-animation="fadeInUp" data-animation-delay="100">
+			<footer id="awd-site-footer">
+	            <div class="copyright animated" data-animation="fadeInUp" data-animation-delay="1000">
+	                <p>© 2018 Cuisinart - All Rights Reserved</p>
+	            </div>
+	            <!--<nav class="social-icons animated" data-animation="fadeInUp" data-animation-delay="1000">
+	                <ul>
+	                    <li title="京东">
+	                        <a href="http://www.baidu.com">
+	                            <img src="images/channel/jd.png">
+	                        </a>
+	                    </li>
+						<li title="苏宁易购">
+	                        <a href="###">
+	                            <img src="images/channel/suning.png">
+	                        </a>
+	                    </li>
+						<li title="天猫">
+	                        <a href="###">
+	                            <img src="images/channel/TMall.png">
+	                        </a>
+	                    </li>
+	                    <li title="微信">
+	                        <a href="###">
+	                            <img src="images/channel/WeChat.png">
+	                        </a>
+	                    </li>
+	                </ul>
+	           </nav>-->
+	        </footer>
 		</div>
     </div>
 
@@ -371,10 +239,10 @@
 	<script type="text/javascript" src="js/swiper.animate1.0.3.min.js"></script>
 	<script>
 		var myswiper = new Swiper('.swiper-container',{
-			//autoplay: true, 					//开启自动轮播
+			autoplay: true, 					//开启自动轮播
 			parallax : true,
 			updateOnImagesReady : true,
-			//loop : true,						//轮播环路
+			loop : true,						//轮播环路
 			pagination: { 					//分页器配置
 				el: '.swiper-pageination',	//CSS样式选择
 				dynamicBullets: true, 		//动态显示
@@ -406,6 +274,26 @@
 //				},
 //			},
 		});
+		jQuery(document).ready(function() {
+				var qcloud = {};
+				$('[_t_nav]').hover(function() {
+					var _nav = $(this).attr('_t_nav');
+					clearTimeout(qcloud[_nav + '_timer']);
+					qcloud[_nav + '_timer'] = setTimeout(function() {
+						$('[_t_nav]').each(function() {
+							$(this)[_nav == $(this).attr('_t_nav') ? 'addClass' : 'removeClass']('nav-up-selected');
+						});
+						$('#' + _nav).stop(true, true).slideDown(200);
+					}, 150);
+				}, function() {
+					var _nav = $(this).attr('_t_nav');
+					clearTimeout(qcloud[_nav + '_timer']);
+					qcloud[_nav + '_timer'] = setTimeout(function() {
+						$('[_t_nav]').removeClass('nav-up-selected');
+						$('#' + _nav).stop(true, true).slideUp(200);
+					}, 150);
+				});
+			});
 	</script>
 </body>
 
