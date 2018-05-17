@@ -972,7 +972,7 @@ ul.paging {
     text-align: right;
 }
 .paging > .active > a, .paging > .active > a:hover {
-    background-color: #ffc229;
+    background-color: #6D8D24;
     border-color: #EDB62B;
 }
 .pagination > li > a {
