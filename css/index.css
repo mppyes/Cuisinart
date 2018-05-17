@@ -242,6 +242,7 @@ strong {
 
 #awd-site-logo img{
 	width: 200px;
+	margin-top: 10px;
 }
 
 /*====================================================
@@ -270,16 +271,16 @@ strong {
 }
 /*轮播背景图*/
 #awd-site-wrap .img_slide1{
-    background: url('../images/index_banner/2.png') no-repeat;
+    background: url('../images/index_banner/3.jpg') no-repeat;
 }
 #awd-site-wrap .img_slide2{
-	background: url('../images/index_banner/2.png') no-repeat;
+	background: url('../images/index_banner/2.jpg') no-repeat;
 }
 #awd-site-wrap .img_slide3{
 	background: url('../images/index_banner/3.jpg') no-repeat;
 }
 #awd-site-wrap .img_slide4{
-	background: url('../images/index_banner/2.png') no-repeat;  
+	background: url('../images/index_banner/2.jpg') no-repeat;  
 }
 #awd-site-wrap .img_slide1 , #awd-site-wrap .img_slide2 , #awd-site-wrap .img_slide3 , #awd-site-wrap .img_slide4{
 	background-size:cover;
@@ -646,13 +647,13 @@ strong {
     z-index: 20;
 }
 .copyright {
-    float: left;
+    float: right;
     vertical-align: bottom;
 }
 .copyright p {
     display: inline-block;
     font-size: 16px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-family: "Quicksand", sans-serif;
     letter-spacing: 2px;
     margin-bottom: 0;
@@ -689,6 +690,8 @@ strong {
 .start .visible {
     visibility: visible;
 }
+
+
 
 /*====================================================
 11. 响应式适配
@@ -879,7 +882,8 @@ strong {
     }
 
     .copyright {
-        display: none;
+        text-align: center;
+        float: none;
     }
    
 	.navigation-down .nav-down-menu{
