@@ -358,7 +358,7 @@ effect.transparent-effect .bottom-effect {
     color: #fff;
 }
 .top-header .header-container .header-title .title {
-    font-size: 38px;
+    font-size: 2em;
     margin-bottom: 5px;
     color: #fff;
     text-transform: uppercase;
@@ -1502,6 +1502,12 @@ p.est {
 .recipes-title > h3 a:hover {
     color: #535353;
 }
+.recipes_propaganda{
+	text-align: center;
+	color: #222;
+	border-bottom: 3px solid #6D8D24;
+	padding-bottom: 1em;
+}
 /*====================================================
 09. 页脚
 ====================================================*/
@@ -1813,6 +1819,9 @@ p.est {
     .single-right-left h4{
     		font-size: 1em;
     }
+    .recipes_propaganda{
+    		font-size: .8em;
+    }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 480px){
@@ -1831,6 +1840,15 @@ p.est {
 	}
 	.container {
     		width: 450px;
+	}
+	.header-container .header-title .title font:before{
+		left: 18%
+	}
+	.header-container .header-title .title font:after{
+		right: 18%;
+	}
+	.top-header .header-container .header-title .title{
+		font-size: 1.6em;
 	}
 }
 
@@ -1869,6 +1887,18 @@ p.est {
     .new-collections h3:after, .single-related-products h3:after{
     		right: 10%;
     }
+    .header-container .header-title .title font:before{
+		left: 18%
+	}
+	.header-container .header-title .title font:after{
+		right: 18%;
+	}
+	.top-header .header-container .header-title .title{
+		font-size: 1.6em;
+	}
+	.recipes_propaganda{
+    		font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 414px) {
@@ -1878,6 +1908,12 @@ p.est {
     .single-related-products h3{
     		font-size: 1.3em;
     }
+    .top-header .header-container .header-title .title{
+		font-size: 1.3em;
+	}
+	.header-container .header-title .title font:before, .header-container .header-title .title font:after{
+		top: 83%;
+	}
 }
 
 @media only screen and (max-width: 320px) {
