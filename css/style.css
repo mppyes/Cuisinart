@@ -19,6 +19,7 @@
 05. 排版
 06. 头部 & Logo & 面包屑
 07. Swiper 4 轮播
+07. index内容页
 08. about内容页
 09. product_list内容页
 10. product内容页
@@ -478,7 +479,15 @@ strong {
 	opacity: 10;
     background: #FFF;
 }
-
+/*====================================================
+08. index内容页
+====================================================*/
+.slogan{
+	width: 100%;
+	height: 50px;
+	background: url('../images/slogan.png') no-repeat center;
+	background-size: 30%;
+}
 /*====================================================
 08. about内容页
 ====================================================*/
@@ -1808,6 +1817,9 @@ em {
     .single-right-left h4{
     		font-size: 1em;
     }
+    .slogan{
+    		background-size: 50%;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1865,6 +1877,9 @@ em {
     }
     .single-related-products h3{
     		font-size: 1.3em;
+    }
+    .slogan{
+    		background-size: 80%;
     }
 }
 
