@@ -8,231 +8,161 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div id="awd-site-wrap" class="bg bg-home">	
-    		<!--===========================
-				  顶部导航内容
-		============================-->
-		<div class="banner_top animated" data-animation="fadeInDown" data-animation-delay="100">
-	        <header id="awd-site-header">
-	            <div id="awd-site-logo" class="animated" data-animation="fadeInDown" data-animation-delay="1000">
-	                <img src="images/logo.png"/>
+	<div id="awd-site-wrap" class="bg bg-home">	
+	    <header id="awd-site-header" class="banner_top">
+	    		<div id="awd-site-logo" class="animated" data-animation="fadeInDown" data-animation-delay="1s">
+                <img src="images/logo.png">
+            </div>
+	    		<button class="menu-toggle animated" data-animation="fadeInDown" data-animation-delay="1s" data-role="toggle">
+	            <span></span>
+	            <span></span>
+	            <span></span>
+	        </button>
+	        <nav id="awd-site-nav" class="navigation animated" data-animation="fadeInDown" data-animation-delay="1s">
+	            <div class="nav-container">
+	                <ul>
+	                    <li>
+	                        <a href="index.html" class="active" style="text-align: center;">首页<p>HOME</p></a>
+	                    </li>
+	                    <li>
+	                        <a href="about.html" style="text-align: center;">关于我们<p>About us</p></a>
+	                    </li>
+	                    <li class="" _t_nav="product">
+	                        <a href="#">产品介绍<i class="fa fa-sort-desc fa-fw"></i><p>Products</p></a>
+	                    </li>
+	                    <li>
+	                        <a href="recipes.html" style="text-align: center;">甄选菜谱<p>Recipes</p></a>
+	                    </li>
+	                    <li>
+	                        <a href="contact_us.html" style="text-align: center;">联系我们<p>Contact us</p></a>
+	                    </li>
+	                </ul>
 	            </div>
-	            <button class="menu-toggle animated" data-animation="fadeInDown" data-animation-delay="1000" data-role="toggle">
-	                <span></span>
-	                <span></span>
-	                <span></span>
-	            </button>
-	            <nav id="awd-site-nav" class="navigation animated" data-animation="fadeInDown" data-animation-delay="1000">
-	                <div class="nav-container">
-	                    <ul>
-	                        <li>
-	                            <a href="index.html" class="active" style="text-align: center;">首页<p>HOME</p></a>
-	                        </li>
-	                        <li>
-	                            <a href="about.html" style="text-align: center;">关于我们<p>About us</p></a>
-	                        </li>
-	                        <li class="" _t_nav="product">
-	                            <a href="#">产品介绍<i class="fa fa-sort-desc fa-fw"></i><p>Products</p></a>
-	                        </li>
-	                        <li>
-	                            <a href="recipes.html" style="text-align: center;">甄选菜谱<p>Recipes</p></a>
-	                        </li>
-	                        <li>
-	                            <a href="contact_us.html" style="text-align: center;">联系我们<p>Contact us</p></a>
-	                        </li>
-	                    </ul>
-	                </div>
-	            </nav>
-	            <div class="navigation-down">
-					<div id="product" class="nav-down-menu menu-1" style="display: none;" _t_nav="product">
-						<div class="navigation-down-inner">
-							<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-								<dt>美食烹饪</dt>
-								<dd>
-									<a href="product_list.html">电蒸锅</a>
-								</dd>
-								<dd>
-									<a href="product_list.html">蒸汽烤箱</a>
-								</dd>
-								<dd>
-									<a href="product_list.html">热风炉</a>
-								</dd>
-								<dd>
-									<a href="product_list.html">电饼档</a>
-								</dd>
-								<dd>
-									<a href="product_list.html">立式华夫机</a>
-								</dd>
-								<dd>
-									<a href="product_list.html">吐司机</a>
-								</dd>
-							</dl>
-							<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-								<dt>食材预处理</dt>
-								<dd>
-									<a href="product_list.html">厨师机及附件</a>
-								</dd>
-								<dd>
-									<a href="product_list.html">手持式搅拌棒</a>
-								</dd>
-								<dd>
-									<a href="product_list.html">破壁机</a>
-								</dd>
-								<dd>
-									<a href="product_list.html">搅拌机</a>
-								</dd>
-							</dl>
-							<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-								<dt>咖啡&酒&茶饮</dt>
-								<dd>
-									<a href="product_list.html">美式自动研磨咖啡机</a>
-								</dd>
-								<dd>
-									<a href="product_list.html">独立式红酒柜</a>
-								</dd>
-								<dd>
-									<a href="product_list.html">电水壶</a>
-								</dd>
-							</dl>
-							<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-								<dt>锅具&烘焙用具</dt>
-								<dd>
-									<a href="product_list.html">锅具</a>
-								</dd>
-							</dl>
-							<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-								<dt>餐具&厨具</dt>
-								<dd>
-									<a href="product_list.html">彩色刀具</a>
-								</dd>
-								<dd>
-									<a href="product_list.html">不锈钢专业刀具</a>
-								</dd>
-							</dl>
-							<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-								<dt>厨房小工具</dt>
-								<dd>
-									<a href="product_list.html">调酒酒具</a>
-								</dd>
-							</dl>
-						</div>
+	        </nav>
+	        <div class="navigation-down">
+				<div id="product" class="nav-down-menu menu-1" style="display: none;" _t_nav="product">
+					<div class="navigation-down-inner">
+						<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+							<dt>美食烹饪</dt>
+							<dd>
+								<a href="product_list.html">电蒸锅</a>
+							</dd>
+							<dd>
+								<a href="product_list.html">蒸汽烤箱</a>
+							</dd>
+							<dd>
+								<a href="product_list.html">热风炉</a>
+							</dd>
+							<dd>
+								<a href="product_list.html">电饼档</a>
+							</dd>
+							<dd>
+								<a href="product_list.html">立式华夫机</a>
+							</dd>
+							<dd>
+								<a href="product_list.html">吐司机</a>
+							</dd>
+						</dl>
+						<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+							<dt>食材预处理</dt>
+							<dd>
+								<a href="product_list.html">厨师机及附件</a>
+							</dd>
+							<dd>
+								<a href="product_list.html">手持式搅拌棒</a>
+							</dd>
+							<dd>
+								<a href="product_list.html">破壁机</a>
+							</dd>
+							<dd>
+								<a href="product_list.html">搅拌机</a>
+							</dd>
+						</dl>
+						<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+							<dt>咖啡&酒&茶饮</dt>
+							<dd>
+								<a href="product_list.html">美式自动研磨咖啡机</a>
+							</dd>
+							<dd>
+								<a href="product_list.html">独立式红酒柜</a>
+							</dd>
+							<dd>
+								<a href="product_list.html">电水壶</a>
+							</dd>
+						</dl>
+						<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+							<dt>锅具&烘焙用具</dt>
+							<dd>
+								<a href="product_list.html">锅具</a>
+							</dd>
+						</dl>
+						<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+							<dt>餐具&厨具</dt>
+							<dd>
+								<a href="product_list.html">彩色刀具</a>
+							</dd>
+							<dd>
+								<a href="product_list.html">不锈钢专业刀具</a>
+							</dd>
+						</dl>
+						<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+							<dt>厨房小工具</dt>
+							<dd>
+								<a href="product_list.html">调酒酒具</a>
+							</dd>
+						</dl>
 					</div>
 				</div>
-	        </header>
-       	</div>
-	     
-     	<!--===========================
-			    轮播内容
-		============================-->
+			</div>
+	    </header>
+
+		<div style="height: 8px;background: #6D8D24;"></div>
 		<div class="swiper-container">
 			<!--页面配置-->
 			<div class="swiper-wrapper">
-				
 				<div class="swiper-slide img_slide1">
-					<a href="product.html">
-						<img src="images/index_banner/3.jpg" style="width: 100%;" />
-					</a>
-					<!--<div class="banner-cut">
-						<div class="banner-bin swiper-lazy swiper-lazy-loaded swiper-slide-active">
-							<div class="banner-absolute">
-								<div class="table-box">
-									<div class="table-cell">
-										<div class="banner-write ">
-											<span class="w1 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">70</span>
-											<span class="w2 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
-												<span class="w21">年专注 · 小家电</span>
-												<span class="w22">Cuisinart</span>
-												<span class="w23">始于 1978 年 美国<br>最值得信赖的厨房品牌</span>
-											</span>
-										</div>
-									</div>
-								</div>
-								<div class="banner-full visible-lg-block ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
-									<ol class="list-paddingleft-2">
-										<li>
-											<p><br></p>
-										</li>
-										<li>
-											<p><br></p>
-										</li>
-										<li>
-											<p><br></p>
-										</li>
-										<li>
-											<p><br></p>
-										</li>
-									</ol>
-									<ul class="list-paddingleft-2">
-										<li>
-											<p><br></p>
-										</li>
-										<li>
-											<p><br></p>
-										</li>
-										<li>
-											<p><br></p>
-										</li>
-										<li>
-											<p><br></p>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>-->
 				</div>
 				<div class="swiper-slide img_slide2"></div>
 				<div class="swiper-slide img_slide3"></div>
 				<div class="swiper-slide img_slide4"></div>
-				
 			</div>
 			<!--分页器-->
 			<div class="swiper-pageination animated" data-animation="fadeInLeft" data-animation-delay="100">
 				<span class="swiper-pagination-bullet-active"></span>
 			</div>
 		</div>
-		
-		<!--===========================
-			    底部信息内容
-		============================-->
-		<div class="banner-bottom animated" data-animation="fadeInUp" data-animation-delay="100">
-			<footer id="awd-site-footer">
-	            <div class="copyright animated" data-animation="fadeInUp" data-animation-delay="1000">
-	                <p>© 2018 Cuisinart - All Rights Reserved</p>
-	            </div>
-	            <!--<nav class="social-icons animated" data-animation="fadeInUp" data-animation-delay="1000">
-	                <ul>
-	                    <li title="京东">
-	                        <a href="http://www.baidu.com">
-	                            <img src="images/channel/jd.png">
-	                        </a>
-	                    </li>
-						<li title="苏宁易购">
-	                        <a href="###">
-	                            <img src="images/channel/suning.png">
-	                        </a>
-	                    </li>
-						<li title="天猫">
-	                        <a href="###">
-	                            <img src="images/channel/TMall.png">
-	                        </a>
-	                    </li>
-	                    <li title="微信">
-	                        <a href="###">
-	                            <img src="images/channel/WeChat.png">
-	                        </a>
-	                    </li>
-	                </ul>
-	           </nav>-->
-	        </footer>
-		</div>
-    </div>
-
+		<div style="width: 100%;height: 50px;background: url('images/slogan.png') no-repeat center;background-size: 30%;"></div>
+	    
+		<footer id="awd-site-footer" class="banner-bottom">
+            <div class="copyright animated" data-animation="fadeInUp" data-animation-delay="1000">
+                <p>© 2018 Cuisinart - All Rights Reserved</p>
+            </div>
+            <nav class="social-icons animated" data-animation="fadeInUp" data-animation-delay="1000">
+                <ul>
+                    <li title="京东">
+                        <a href="http://www.baidu.com">
+                            <img src="images/channel/jd.png">
+                        </a>
+                    </li>
+                    <li title="微信">
+                        <a href="###">
+                            <img src="images/channel/WeChat.png">
+                        </a>
+                    </li>
+					<li title="微博">
+                        <a href="###">
+                            <img src="images/channel/micro-blog.png">
+                        </a>
+                    </li>
+                </ul>
+           </nav>
+        </footer>
+	</div>
     <!-- JS -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -241,63 +171,43 @@
     <script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/swiper.min.js"></script>
 	<script type="text/javascript" src="js/swiper.animate1.0.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.countTo.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/jquery.SuperSlide2.1.2.js"></script>
 	<script>
+		//启动wow动态效果
+		new WOW().init();
+		
+		//线下渠道轮播
 		var myswiper = new Swiper('.swiper-container',{
 			autoplay: true, 					//开启自动轮播
-			parallax : true,
-			updateOnImagesReady : true,
-			loop : true,						//轮播环路
-			pagination: { 					//分页器配置
-				el: '.swiper-pageination',	//CSS样式选择
-				dynamicBullets: true, 		//动态显示
-				clickable :true,				//分页器可点击
-			},
-			on:{
-		      	init: function(){
-			    		swiperAnimateCache(this); //隐藏动画元素 
-			    		swiperAnimate(this); //初始化完成开始动画
-			    }, 
-			    slideChangeTransitionEnd: function(){ 
-			        swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
-			    } 
-		    }
-//			on: { //获取当前轮播索引页,并根据该索引进行控制页面内容
-//				slideChangeTransitionStart: function(){
-//					silde = this.activeIndex;
-//					
-//					if(silde == 1){
-//						$("#awd-site-nav").css("color","red");
-//						$('#awd-site-logo img').attr("src", "images/logo-b.png");
-//					}else if(silde == 2){
-//						$("#awd-site-nav").css("color","#FFF");
-//						$('#awd-site-logo img').attr("src", "images/logo.png");
-//					}else if(silde == 0){
-//						$("#awd-site-nav").css("color","#FFF");
-//						$('#awd-site-logo img').attr("src", "images/logo.png");
-//					}
-//				},
-//			},
+			loop: true,						//轮播环路
+			
 		});
+		
+		//下拉导航栏分类
 		jQuery(document).ready(function() {
-				var qcloud = {};
-				$('[_t_nav]').hover(function() {
-					var _nav = $(this).attr('_t_nav');
-					clearTimeout(qcloud[_nav + '_timer']);
-					qcloud[_nav + '_timer'] = setTimeout(function() {
-						$('[_t_nav]').each(function() {
-							$(this)[_nav == $(this).attr('_t_nav') ? 'addClass' : 'removeClass']('nav-up-selected');
-						});
-						$('#' + _nav).stop(true, true).slideDown(200);
-					}, 150);
-				}, function() {
-					var _nav = $(this).attr('_t_nav');
-					clearTimeout(qcloud[_nav + '_timer']);
-					qcloud[_nav + '_timer'] = setTimeout(function() {
-						$('[_t_nav]').removeClass('nav-up-selected');
-						$('#' + _nav).stop(true, true).slideUp(200);
-					}, 150);
-				});
+			var qcloud = {};
+			$('[_t_nav]').hover(function() {
+				var _nav = $(this).attr('_t_nav');
+				clearTimeout(qcloud[_nav + '_timer']);
+				qcloud[_nav + '_timer'] = setTimeout(function() {
+					$('[_t_nav]').each(function() {
+						$(this)[_nav == $(this).attr('_t_nav') ? 'addClass' : 'removeClass']('nav-up-selected');
+					});
+					$('#' + _nav).stop(true, true).slideDown(200);
+				}, 150);
+			}, function() {
+				var _nav = $(this).attr('_t_nav');
+				clearTimeout(qcloud[_nav + '_timer']);
+				qcloud[_nav + '_timer'] = setTimeout(function() {
+					$('[_t_nav]').removeClass('nav-up-selected');
+					$('#' + _nav).stop(true, true).slideUp(200);
+				}, 150);
 			});
+		});
+		
+		
 	</script>
 </body>
 

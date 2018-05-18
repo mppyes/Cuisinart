@@ -121,14 +121,14 @@
 			</div>
 	    </header>
 
-		<div class="container" style="padding: 3em 0;">
-			<div class="col-md-6">
-				<img src="images/recipes_details/bg.jpg" style="width: 100%;" class="animated wow fadeInLeft" data-wow-offset="0" data-wow-delay=".5s" />
+		<div id="recipes_details" class="container">
+			<div class="col-md-6 recipes_details_img">
+				<img src="images/recipes_details/bg.jpg" class="animated wow fadeInLeft" data-wow-offset="0" data-wow-delay=".5s" />
 			</div>
-			<div class="col-md-6">
-				<h2 style="color: #6D8D24;" class="animated wow fadeInDown" data-wow-offset="0" data-wow-delay=".5s">烤黄油南瓜与野生饭肉饭</h2>
+			<div class="col-md-6 recipes_details_conter">
+				<h2 class="animated wow fadeInDown" data-wow-offset="0" data-wow-delay=".5s">烤黄油南瓜与野生饭肉饭</h2>
 				<p class="animated wow zoomIn" data-wow-offset="0" data-wow-delay=".5s">分量：8</p>
-				<p style="color: #111111;font-weight: 400;font-size: 16px;text-shadow: 1px 1px 0px #FFF;" class="animated wow fadeInRight" data-wow-offset="0" data-wow-delay=".5s">
+				<p class="recipes_details_details animated wow fadeInRight" data-wow-offset="0" data-wow-delay=".5s">
 					入秋了，美膳雅带来北京厨房的一道特色应季菜品“味噌焖羊腩”。
 					上等东山羊腩肉搭配栗子和马蹄，由日本味噌焖出酥香软糯的绝美滋味和曼妙口感，绝对是秋季温补贴膘神器！
 					快叫上你的小伙伴在家试试吧。 
@@ -141,59 +141,62 @@
 				</p>
 			</div>
 			<div class="clearfix"></div>
-			<div class="bootstrap-tab animated wow fadeInRight" data-wow-offset="0" data-wow-delay=".5s">
-				<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
-					<ul id="myTab" class="nav nav-tabs" role="tablist">
-						<li role="presentation" class="active">
-							<a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">配料</a>
-						</li>
-						<li role="presentation">
-							<a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">制作步骤</a>
-						</li>
-					</ul>
-					<div id="myTabContent" class="tab-content">
-						<div role="tabpanel" class="tab-pane fade in active bootstrap-tab-text" id="home" aria-labelledby="home-tab">
-							<div class="list-group list-group-alternate"> 
-								<p class="list-group-item"><span class="badge badge-primary">1杯（250毫升）</span> <i class="ti ti-email"></i> 胡萝卜 - 去皮 </p> 
-								<p class="list-group-item"><span class="badge badge-primary">1杯（250毫升）</span> <i class="ti ti-eye"></i> 芹菜茎 - 去皮 </p> 
-								<p class="list-group-item"><span class="badge badge-primary">1杯（250毫升）</span> <i class="ti ti-headphone-alt"></i> 黄洋葱 - 去皮 </p>
-								<p class="list-group-item"><span class="badge badge-primary">1杯（250毫升）</span> <i class="ti ti-headphone-alt"></i> Cremini蘑菇 - 拉丝清洁和切片 </p>
-								<p class="list-group-item"><span class="badge badge-primary">200克</span> <i class="ti ti-headphone-alt"></i> 培根 - 切片3-5毫米 </p>
-								<p class="list-group-item"><span class="badge badge-primary">1杯（250毫升）</span> <i class="ti ti-headphone-alt"></i> 茉莉花米 </p>
-								<p class="list-group-item"><span class="badge badge-primary">1杯（250毫升）</span> <i class="ti ti-headphone-alt"></i> 糙米 </p>
-								<p class="list-group-item"><span class="badge badge-primary">1/2杯（125毫升）</span> <i class="ti ti-headphone-alt"></i> 野生稻 </p>
-								<p class="list-group-item"><span class="badge badge-primary">6杯（1500毫升）</span> <i class="ti ti-headphone-alt"></i> 鸡汤 </p>
-								<p class="list-group-item"><span class="badge badge-primary">1汤匙（15ml）</span> <i class="ti ti-headphone-alt"></i> 新鲜的百里香 - 剥去叶子 </p>
-								<p class="list-group-item"><span class="badge badge-primary">1花束</span> <i class="ti ti-headphone-alt"></i> 剥落的海盐味道 </p>
+			<div class="container">
+				<div class="bootstrap-tab animated wow fadeInRight" data-wow-offset="0" data-wow-delay=".5s">
+					<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+						<ul id="myTab" class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active">
+								<a href="#step" id="step-tab" role="tab" data-toggle="tab" aria-controls="step" aria-expanded="true">制作步骤</a>
+							</li>
+							<li role="presentation">
+								<a href="#seasoning" role="tab" id="seasoning-tab" data-toggle="tab" aria-controls="seasoning">配料</a>
+							</li>
+						</ul>
+						<div id="myTabContent" class="tab-content">
+							<div role="tabpanel" class="tab-pane fade in active bootstrap-tab-text" id="step" aria-labelledby="step-tab">
+								<h2>1<span>适合的Cuisinart Griddler®豪华具有两个鏊板和预热既450°F（220℃）</span></h2>
+								<h2>2<span>从切丝马铃薯中挤出多余的水，加入芹菜，洋葱和百里香</span></h2>
+								<h2>3<span>从切丝马铃薯中挤出多余的水，加入芹菜，洋葱和百里香</span></h2>
+								<h2>4<span>将鸡蛋混合物倒在切碎的蔬菜混合物上，一起折叠</span></h2>
+								<h2>5<span>在Griddler®Deluxe上刷黄油，形成所需大小的煎饼，炒至金黄色，转动</span></h2>
+								<h2>6<span>双面煎至金黄色，用纸巾翻出去除多余的油脂</span></h2>
+								<h2>7<span>用盐和胡椒调味，用苹果梅酱盛放整个或楔入</span></h2>
 							</div>
-						</div>
-						<div role="tabpanel" class="tab-pane fade bootstrap-tab-text" id="profile" aria-labelledby="profile-tab" style="padding: 1em;background: url(images/recipes/bg-1.jpg) no-repeat scroll right bottom 0;">
-							<h2 style="color: #535353;font-weight: 500;">1<span style="color: #535353;font-size: 18px;padding-left: 1em;font-weight: 400;">适合的Cuisinart Griddler®豪华具有两个鏊板和预热既450°F（220℃）</span></h2>
-							<h2 style="color: #535353;font-weight: 500;">2<span style="color: #535353;font-size: 18px;padding-left: 1em;font-weight: 400;">从切丝马铃薯中挤出多余的水，加入芹菜，洋葱和百里香</span></h2>
-							<h2 style="color: #535353;font-weight: 500;">3<span style="color: #535353;font-size: 18px;padding-left: 1em;font-weight: 400;">从切丝马铃薯中挤出多余的水，加入芹菜，洋葱和百里香</span></h2>
-							<h2 style="color: #535353;font-weight: 500;">4<span style="color: #535353;font-size: 18px;padding-left: 1em;font-weight: 400;">将鸡蛋混合物倒在切碎的蔬菜混合物上，一起折叠</span></h2>
-							<h2 style="color: #535353;font-weight: 500;">5<span style="color: #535353;font-size: 18px;padding-left: 1em;font-weight: 400;">在Griddler®Deluxe上刷黄油，形成所需大小的煎饼，炒至金黄色，转动</span></h2>
-							<h2 style="color: #535353;font-weight: 500;">6<span style="color: #535353;font-size: 18px;padding-left: 1em;font-weight: 400;">双面煎至金黄色，用纸巾翻出去除多余的油脂</span></h2>
-							<h2 style="color: #535353;font-weight: 500;">7<span style="color: #535353;font-size: 18px;padding-left: 1em;font-weight: 400;">用盐和胡椒调味，用苹果梅酱盛放整个或楔入</span></h2>
+							<div role="tabpanel" class="tab-pane fade bootstrap-tab-text" id="seasoning" aria-labelledby="seasoning-tab" >
+								<div class="list-group list-group-alternate"> 
+									<p class="list-group-item"><span class="badge badge-primary">1杯（250毫升）</span> <i class="ti ti-email"></i> 胡萝卜 - 去皮 </p> 
+									<p class="list-group-item"><span class="badge badge-primary">1杯（250毫升）</span> <i class="ti ti-eye"></i> 芹菜茎 - 去皮 </p> 
+									<p class="list-group-item"><span class="badge badge-primary">1杯（250毫升）</span> <i class="ti ti-headphone-alt"></i> 黄洋葱 - 去皮 </p>
+									<p class="list-group-item"><span class="badge badge-primary">1杯（250毫升）</span> <i class="ti ti-headphone-alt"></i> Cremini蘑菇 - 拉丝清洁和切片 </p>
+									<p class="list-group-item"><span class="badge badge-primary">200克</span> <i class="ti ti-headphone-alt"></i> 培根 - 切片3-5毫米 </p>
+									<p class="list-group-item"><span class="badge badge-primary">1杯（250毫升）</span> <i class="ti ti-headphone-alt"></i> 茉莉花米 </p>
+									<p class="list-group-item"><span class="badge badge-primary">1杯（250毫升）</span> <i class="ti ti-headphone-alt"></i> 糙米 </p>
+									<p class="list-group-item"><span class="badge badge-primary">1/2杯（125毫升）</span> <i class="ti ti-headphone-alt"></i> 野生稻 </p>
+									<p class="list-group-item"><span class="badge badge-primary">6杯（1500毫升）</span> <i class="ti ti-headphone-alt"></i> 鸡汤 </p>
+									<p class="list-group-item"><span class="badge badge-primary">1汤匙（15ml）</span> <i class="ti ti-headphone-alt"></i> 新鲜的百里香 - 剥去叶子 </p>
+									<p class="list-group-item"><span class="badge badge-primary">1花束</span> <i class="ti ti-headphone-alt"></i> 剥落的海盐味道 </p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div style="margin: 2em 0;border-top:1px solid #ccc;padding-top: 2em;">
-				<h3 style="color: #6D8D24;margin-bottom: 2em;" class="animated wow fadeInDown" data-wow-offset="0" data-wow-delay=".5s">兼容产品</h3>
-				<div style="width: 22%;float: left;margin: 0 10px;" class="animated wow fadeInLeft" data-wow-offset="0" data-wow-delay=".7s">
-					<a href="product.html">
-						<img src="images/recipes_details/GR-150C.jpg" width="100%"/>
-					</a>
-					<p style="font-size: 18px;color: #6D8D24;text-align: center;margin-top: 10px;"><a href="product.html">Griddler Deluxe</a></p>
+			<div class="container">
+				<div class="recipes_details_product">
+					<h3 class="animated wow fadeInDown" data-wow-offset="0" data-wow-delay=".5s">兼容产品</h3>
+					<div class="recipes_details_product_img animated wow fadeInLeft" data-wow-offset="0" data-wow-delay=".7s">
+						<a href="product.html">
+							<img src="images/recipes_details/GR-150C.jpg"/>
+						</a>
+						<p><a href="product.html">Griddler Deluxe</a></p>
+					</div>
+					<div class="recipes_details_product_img animated wow fadeInLeft" data-wow-offset="0" data-wow-delay=".5s">
+						<a href="product.html">
+							<img src="images/recipes_details/PSC-350C.jpg"/>
+						</a>
+						<p><a href="product.html">3.5夸脱可编程慢炖锅</a></p>
+					</div>
 				</div>
-				<div style="width: 22%;float: left;" class="animated wow fadeInLeft" data-wow-offset="0" data-wow-delay=".5s">
-					<a href="product.html">
-						<img src="images/recipes_details/PSC-350C.jpg" width="100%"/>
-					</a>
-					<p style="font-size: 18px;color: #6D8D24;text-align: center;margin-top: 10px;"><a href="product.html">3.5夸脱可编程慢炖锅</a></p>
-				</div>
-				
 			</div>
 		</div>
 		
@@ -209,24 +212,20 @@
                             <img src="images/channel/jd.png">
                         </a>
                     </li>
-										<li title="苏宁易购">
-                        <a href="###">
-                            <img src="images/channel/suning.png">
-                        </a>
-                    </li>
-										<li title="天猫">
-                        <a href="###">
-                            <img src="images/channel/TMall.png">
-                        </a>
-                    </li>
                     <li title="微信">
                         <a href="###">
                             <img src="images/channel/WeChat.png">
                         </a>
                     </li>
+					<li title="微博">
+                        <a href="###">
+                            <img src="images/channel/micro-blog.png">
+                        </a>
+                    </li>
                 </ul>
            </nav>
         </footer>
+	
 	</div>
     <!-- JS -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
