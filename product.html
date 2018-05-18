@@ -6,511 +6,334 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<!-- JS -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/vendor.js"></script>
-    <script type="text/javascript" src="js/options.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/swiper.min.js"></script>
-	<script type="text/javascript" src="js/swiper.animate1.0.3.min.js"></script>
-	<script type="text/javascript" src="js/wow.min.js"></script>
-	<script type="text/javascript" src="js/imagezoom.js"></script>
-	<script defer src="js/jquery.flexslider.js"></script>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/product.css">
 </head>
 
 <body>
-	<div id="awd-site-wrap" class="bg bg-home">	
-	    <header id="awd-site-header" class="banner_top">
-	    		<div id="awd-site-logo" class="animated" data-animation="fadeInDown" data-animation-delay="1s">
-                <img src="images/logo.png">
-            </div>
-	    		<button class="menu-toggle animated" data-animation="fadeInDown" data-animation-delay="1s" data-role="toggle">
-	            <span></span>
-	            <span></span>
-	            <span></span>
-	        </button>
-	        <nav id="awd-site-nav" class="navigation animated" data-animation="fadeInDown" data-animation-delay="1s">
-	            <div class="nav-container">
-	                <ul>
-	                    <li>
-	                        <a href="index.html" class="active" style="text-align: center;">首页<p>HOME</p></a>
-	                    </li>
-	                    <li>
-	                        <a href="about.html" style="text-align: center;">关于我们<p>About us</p></a>
-	                    </li>
-	                    <li class="" _t_nav="product">
-	                        <a href="#">产品介绍<i class="fa fa-sort-desc fa-fw"></i><p>Products</p></a>
-	                    </li>
-	                    <li>
-	                        <a href="recipes.html" style="text-align: center;">甄选菜谱<p>Recipes</p></a>
-	                    </li>
-	                    <li>
-	                        <a href="contact_us.html" style="text-align: center;">联系我们<p>Contact us</p></a>
-	                    </li>
-	                </ul>
-	            </div>
-	        </nav>
-	        <div class="navigation-down">
-				<div id="product" class="nav-down-menu menu-1" style="display: none;" _t_nav="product">
-					<div class="navigation-down-inner">
-						<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-							<dt>美食烹饪</dt>
-							<dd>
-								<a href="product_list.html">电蒸锅</a>
-							</dd>
-							<dd>
-								<a href="product_list.html">蒸汽烤箱</a>
-							</dd>
-							<dd>
-								<a href="product_list.html">热风炉</a>
-							</dd>
-							<dd>
-								<a href="product_list.html">电饼档</a>
-							</dd>
-							<dd>
-								<a href="product_list.html">立式华夫机</a>
-							</dd>
-							<dd>
-								<a href="product_list.html">吐司机</a>
-							</dd>
-						</dl>
-						<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-							<dt>食材预处理</dt>
-							<dd>
-								<a href="product_list.html">厨师机及附件</a>
-							</dd>
-							<dd>
-								<a href="product_list.html">手持式搅拌棒</a>
-							</dd>
-							<dd>
-								<a href="product_list.html">破壁机</a>
-							</dd>
-							<dd>
-								<a href="product_list.html">搅拌机</a>
-							</dd>
-						</dl>
-						<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-							<dt>咖啡&酒&茶饮</dt>
-							<dd>
-								<a href="product_list.html">美式自动研磨咖啡机</a>
-							</dd>
-							<dd>
-								<a href="product_list.html">独立式红酒柜</a>
-							</dd>
-							<dd>
-								<a href="product_list.html">电水壶</a>
-							</dd>
-						</dl>
-						<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-							<dt>锅具&烘焙用具</dt>
-							<dd>
-								<a href="product_list.html">锅具</a>
-							</dd>
-						</dl>
-						<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-							<dt>餐具&厨具</dt>
-							<dd>
-								<a href="product_list.html">彩色刀具</a>
-							</dd>
-							<dd>
-								<a href="product_list.html">不锈钢专业刀具</a>
-							</dd>
-						</dl>
-						<dl class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-							<dt>厨房小工具</dt>
-							<dd>
-								<a href="product_list.html">调酒酒具</a>
-							</dd>
-						</dl>
-					</div>
-				</div>
-			</div>
-	    </header>
-
-		<!--===========================
-				  内容部分
-		============================-->
-		<div class="single">
-			<div class="container">
-				<div class="col-md-4 products-left">
-					<div class="categories animated wow fadeInLeft" data-wow-offset="10" data-wow-delay=".5s" style="margin-top: 0px;" >
-						<h3>商品分类</h3>
-						<ul class="cate">
-							<li>
-								<a href="products.html">美食烹饪</a>
-							</li>
-							<ul>
-								<li>
-									<a href="products.html">电蒸锅</a>
-								</li>
-								<li>
-									<a href="products.html">蒸汽烤箱</a>
-								</li>
-								<li>
-									<a href="products.html">热风炉</a>
-								</li>
-								<li>
-									<a href="products.html">电饼档</a>
-								</li>
-								<li>
-									<a href="products.html">立式华夫机</a>
-								</li>
-								<li>
-									<a href="products.html">吐司机</a>
-								</li>
-							</ul>
-							<li>
-								<a href="products.html">食材预处理</a>
-							</li>
-							<ul>
-								<li>
-									<a href="products.html">厨师机及附件</a>
-								</li>
-								<li>
-									<a href="products.html">手持式搅拌棒</a>
-								</li>
-								<li>
-									<a href="products.html">破壁机</a>
-								</li>
-								<li>
-									<a href="products.html">搅拌机</a>
-								</li>
-							</ul>
-							<li>
-								<a href="products.html">咖啡&酒&茶饮</a>
-							</li>
-							<ul>
-								<li>
-									<a href="products.html">美式自动研磨咖啡机</a>
-								</li>
-								<li>
-									<a href="products.html">独立式红酒柜</a>
-								</li>
-								<li>
-									<a href="products.html">电水壶</a>
-								</li>
-							</ul>
-							<li>
-								<a href="products.html">锅具&烘焙用具</a>
-							</li>
-							<ul>
-								<li>
-									<a href="products.html">锅具</a>
-								</li>
-							</ul>
-							<li>
-								<a href="products.html">餐具&厨具</a>
-							</li>
-							<ul>
-								<li>
-									<a href="products.html">彩色刀具</a>
-								</li>
-								<li>
-									<a href="products.html">不锈钢专业刀具</a>
-								</li>
-							</ul>
-						</ul>
-					</div>
-					<!--<div class="men-position animated wow slideInUp" data-wow-delay=".5s">
-						<a href="single.html"><img src="images/29.jpg" alt=" " class="img-responsive" /></a>
-						<div class="men-position-pos">
-
-						</div>
-					</div>-->
-				</div>
-				<div class="col-md-8 single-right">
-					<div class="col-md-5 single-right-left animated wow fadeInDown" data-wow-offset="10" data-wow-delay=".5s">
-						<div class="flexslider">
-							<ul class="slides">
-								<li data-thumb="images/product/si.jpg">
-									<div class="thumb-image">
-										<img src="images/product/si.jpg" data-imagezoom="true" class="img-responsive">
-									</div>
-								</li>
-								<li data-thumb="images/product/si1.jpg">
-									<div class="thumb-image"> <img src="images/product/si1.jpg" data-imagezoom="true" class="img-responsive"> </div>
-								</li>
-								<li data-thumb="images/product/si2.jpg">
-									<div class="thumb-image"> <img src="images/product/si2.jpg" data-imagezoom="true" class="img-responsive"> </div>
-								</li>
-							</ul>
-						</div>
-						<!-- flixslider -->
-						
-						<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-						<script>
-							
-						</script>
-						<!-- flixslider -->
-					</div>
-					
-					<div class="col-md-7 single-right-left simpleCart_shelfItem animated wow fadeInRight" data-wow-offset="10" data-wow-delay=".5s">
-						<p>CPB-300WCN</p>
-						<h3>HURRICANE飓风系列 高速破壁料理机</h3>
-						<h4>市场指导价：¥ 4,599元</h4>
-						<div class="description">
-							<h5><i>商品简介</i></h5>
-							<p>三层铜钢结构，确保最佳热传导。外层使用铜材质是专业的做法，因为它能快速加热和冷 却，从而实现精确的温度把控。优越的加热性能，<b>Heat Surround技术</b>将热量沿底部和侧 壁均匀分布炊具，消除加热不均的现象。<b>Cast stainless steel Cool Grip</b>不锈钢手柄，整 体设计目的为在炉火或高温旁工作时有一个安全的手把可供握持。盖实的不锈钢盖使锅里 的食材保持水分和多汁，从而锁定食物中的营养成分，同时带来美味的口感。</p>
-							<p style="text-align: right;margin-top: 1.5em;">
-								<button style="color: #6D8D24;border: 0px;">前往购买</button>
-								<button style="background: #6D8D24;color: #fff;">京东商城</button>
-								<button style="background: #6D8D24;color: #fff;">天猫商城</button>
-							</p>
-							
-						</div>
-						
-						<!--<div class="description">
-							<p>
-								<h5>上市时间：2018年6月</h5></p>
-						</div>-->
-					</div>
-					<div class="clearfix"> </div>
-					<div class="bootstrap-tab animated wow fadeInRight" data-wow-offset="0" data-wow-delay=".5s">
-						<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
-							<ul id="myTab" class="nav nav-tabs" role="tablist">
-								<li role="presentation" class="active">
-									<a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">产品介绍</a>
-								</li>
-								<li role="presentation">
-									<a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">功能及参数</a>
-								</li>
-								<li role="presentation">
-									<a href="#dropdown1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1">产品服务</a>
-								</li>
-							</ul>
-							<div id="myTabContent" class="tab-content">
-								<div role="tabpanel" class="tab-pane fade in active bootstrap-tab-text" id="home" aria-labelledby="home-tab">
-									<video width="100%" poster="images/index_banner/4.jpg" controls="controls" style="margin-top: 30px;">
-										<source src="1.mp4" type="video/mp4">
-									</video>
-									<h5>HURRICANE飓风系列 高速破壁料理机</h5>
-									<p>三层铜钢结构，确保最佳热传导。外层使用铜材质是专业的做法，因为它能快速加热和冷却，从而实现精确的温度把控。优越的加热性能，Heat Surround技术将热量沿底部和侧 壁均匀分布炊具，消除加热不均的现象。
-										<span>优越的加热性能，Heat Surround技术将热量沿底部和侧 壁均匀分布炊具，消除加热不均的现象。盖实的不锈钢盖使锅里 的食材保持水分和多汁，从而锁定食物中的营养成分，同时带来美味的口感。</span>
-										<span>Cast stainless steel Cool Grip不锈钢手柄，整 体设计目的为在炉火或高温旁工作时有一个安全的手把可供握持。盖实的不锈钢盖使锅里 的食材保持水分和多汁，从而锁定食物中的营养成分，同时带来美味的口感。</span>
-									</p>
-								</div>
-								<div role="tabpanel" class="tab-pane fade bootstrap-tab-text" id="profile" aria-labelledby="profile-tab">
-									<table class="table table-bordered">
-										<tbody>
-											<tr>
-												<td>水箱容量:1升</td>
-												<td>玻璃锅容量:5升</td>
-											</tr>
-											<tr>
-												<td>强大的蒸汽系统，30秒内快速出蒸汽</td>
-												<td>可清洗安全玻璃锅体</td>
-											</tr>
-											<tr>
-												<td>LCD控制面板</td>
-												<td>8种预设食谱</td>
-											</tr>
-											<tr>
-												<td>开始/结束，暂停&加热</td>
-												<td>可拆卸蓄水箱</td>
-											</tr>
-											<tr>
-												<td>自带配件:不锈钢托盘</td>
-												<td>不锈钢镶边玻璃盖</td>
-											</tr>
-											<tr>
-												<td>3年质保</td>
-												<td></td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								<div role="tabpanel" class="tab-pane fade bootstrap-tab-text" id="dropdown1" aria-labelledby="dropdown1-tab">
-									<table class="table table-striped">
-										<thead>
-											<tr>
-												<th>序号</th>
-												<th width="40%">文件名</th>
-												<th width="30%">上传时间</th>
-												<th>操作</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>1</td>
-												<td>CPB-300WCN说明书</td>
-												<td>2018-04-22</td>
-												<td>
-													<a class="fa fa-cloud-download" href="https://www.baidu.com"></a>
-												</td>
-											</tr>
-											<tr>
-												<td>2</td>
-												<td>CPB-300WCN说明书</td>
-												<td>2018-04-22</td>
-												<td>
-													<a class="fa fa-cloud-download" href="http://www.qq.com"></a>
-												</td>
-											</tr>
-											<tr>
-												<td>3</td>
-												<td>CPB-300WCN说明书</td>
-												<td>2018-04-22</td>
-												<td>
-													<a class="fa fa-cloud-download" href="http://www.163.com"></a>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
+	<header id="product_header">
+		<div class="product_header_bottom">
+			<ul class="header_logo animated wow zoomIn" data-wow-delay=".3s" data-wow-offset="10">
+				<li><a href="index.html"><img src="images/logo.png"></a></li>
+			</ul>
+			<ul class="header_main_navigation">
+				<li class="ac-gn-item ac-gn-item-menu animated wow fadeInDown" data-wow-delay=".3s" data-wow-offset="10">
+					<a class="ac-gn-link" href="recipes.html">
+						<span class="ac-gn-link-text"><img src="images/product_list/cookbook.png" style="width: 20px;" alt="食谱"></span>
+					</a>
+				</li>
+				<li class="ac-gn-item ac-gn-item-menu animated wow fadeInDown" data-wow-delay=".5s" data-wow-offset="10">
+					<a href="index.html" class="ac-gn-link">
+						<span class="ac-gn-link-text"><img src="images/product_list/home.png" style="width: 20px;" alt="返回首页"></span>
+					</a>
+				</li>
+				<li class="ac-gn-item ac-gn-item-menu animated wow fadeInDown" data-wow-delay=".7s" data-wow-offset="10">
+					<a class="ac-gn-link" href="contact_us.html">
+						<span class="ac-gn-link-text"><img src="images/product_list/tel.png" style="width: 20px;" alt="联系我们"></span>
+					</a>
+				</li>
+			</ul>
 		</div>
-		
-		<!--===========================
-		          推荐菜谱
-		============================-->
-		<div class="single-related-products">
-			<div class="container">
-				<h3 class="animated wow zoomIn" data-wow-delay=".3s" data-wow-offset="10">推荐食谱</h3>
-				<p class="est animated wow zoomIn" data-wow-delay=".3s" data-wow-offset="10">为心爱的人做饭，不求多加赞美、评头论足，满满的都吃掉便是最好的报答</p>
-				<div class="new-collections-grids">
-					<div class="col-md-3 new-collections-grid animated wow fadeInLeft" data-wow-offset="10" data-wow-delay=".5s">
-						<div class="new-collections-grid1">
-							<div class="new-collections-grid1-image">
-								<a href="cb_details.html" class="product-image"><img src="images/product/39.jpg" alt=" " class="img-responsive"></a>
-							</div>
-							<h4><a href="cb_details.html">芝士猫耳朵</a></h4>
-							<p>如何将人见人爱的猫耳朵和马苏里拉芝士完美结合？</p>
-							<div class="rating">
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="new-collections-grid1-left simpleCart_shelfItem">
-								<p>
-									<a class="item_add" href="cb_details">查看食谱</a>
-								</p>
-							</div>
+		<nav id="product_header_litle" class="js no-touch flexbox">
+			<div class="ac-gn-content">
+				<ul class="swiper-wrapper" style="display: flex;width: 800px;margin: 0 auto;">
+					<li class="swiper-slide animated wow fadeInDown" data-wow-delay=".3s" data-wow-offset="10" style="width: 120px;">
+						<a class="ac-gn-link" href="product_list.html">
+							<span class="ac-gn-link-text">美食烹饪</span>
+						</a>
+					</li>
+					<li class="swiper-slide animated wow fadeInDown" data-wow-delay=".5s" data-wow-offset="10" style="width: 120px;">
+						<a class="ac-gn-link" href="product_list.html">
+							<span class="ac-gn-link-text">食材预处理</span>
+						</a>
+					</li>
+					<li class="swiper-slide animated wow fadeInDown" data-wow-delay=".7s" data-wow-offset="10" style="width: 120px;">
+						<a class="ac-gn-link" href="product_list.html">
+							<span class="ac-gn-link-text">咖啡&酒&茶饮</span>
+						</a>
+					</li>
+					<li class="swiper-slide animated wow fadeInDown" data-wow-delay=".9s" data-wow-offset="10" style="width: 120px;">
+						<a class="ac-gn-link" href="product_list.html">
+							<span class="ac-gn-link-text">锅具&烘焙用具</span>
+						</a>
+					</li>
+					<li class="swiper-slide animated wow fadeInDown" data-wow-delay="1.1s" data-wow-offset="10" style="width: 120px;">
+						<a class="ac-gn-link" href="product_list.html">
+							<span class="ac-gn-link-text">餐具&厨具</span>
+						</a>
+					</li>
+					<li class="swiper-slide animated wow fadeInDown" data-wow-delay="1.3s" data-wow-offset="10" style="width: 120px;">
+						<a class="ac-gn-link" href="product_list.html">
+							<span class="ac-gn-link-text">厨房小工具</span>
+						</a>
+					</li>
+			</ul>
+
+			</div>
+			
+		</nav>
+		<div id="product_header_list" class="swiper-container" style="width: 100%;">
+			<ul class="swiper-wrapper" style="display: flex;font-size: 13px;width: 800px;margin: 0 auto;">
+				<li class="swiper-slide animated wow fadeInUp" data-wow-delay=".3s" data-wow-offset="10" style="width: 100px;">
+					<a href="product_list.html">
+						<p style="margin: 0;width: 100%;display: flex;justify-content: center;align-items: center;">
+							<img src="images/product_list/1.png" style="width: 50px;height: 50px;margin: 0 auto;">
+						</p>
+						<p style="color: #fff;margin: 0;text-align: center;">电蒸锅</p>
+					</a>
+				</li>
+				<li class="swiper-slide animated wow fadeInUp" data-wow-delay=".5s" data-wow-offset="10" style="width: 100px;">
+					<a href="product_list.html">
+						<p style="margin: 0;width: 100%;display: flex;justify-content: center;align-items: center;">
+							<img src="images/product_list/2.png" style="width: 50px;height: 50px;margin: 0 auto;">
+						</p>
+						<p style="color: #fff;margin: 0;text-align: center;">蒸汽烤箱</p>
+					</a>
+				</li>
+				<li class="swiper-slide animated wow fadeInUp" data-wow-delay=".7s" data-wow-offset="10" style="width: 100px;">
+					<a href="product_list.html">
+						<p style="margin: 0;width: 100%;display: flex;justify-content: center;align-items: center;">
+							<img src="images/product_list/3.png" style="width: 50px;height: 50px;margin: 0 auto;">
+						</p>
+						<p style="color: #fff;margin: 0;text-align: center;">热风炉</p>
+					</a>
+				</li>
+				<li class="swiper-slide animated wow fadeInUp" data-wow-delay=".9s" data-wow-offset="10" style="width: 100px;">
+					<a href="product_list.html">
+						<p style="margin: 0;width: 100%;display: flex;justify-content: center;align-items: center;">
+							<img src="images/product_list/4.png" style="width: 50px;height: 50px;margin: 0 auto;">
+						</p>
+						<p style="color: #fff;margin: 0;text-align: center;">电饼档</p>
+					</a>
+				</li>
+				<li class="swiper-slide animated wow fadeInUp" data-wow-delay="1.1s" data-wow-offset="10" style="width: 100px;">
+					<a href="product_list.html">
+						<p style="margin: 0;width: 100%;display: flex;justify-content: center;align-items: center;">
+							<img src="images/product_list/5.png" style="width: 50px;height: 50px;margin: 0 auto;">
+						</p>
+						<p style="color: #fff;margin: 0;text-align: center;">立式华夫机</p>
+					</a>
+				</li>
+				<li class="swiper-slide animated wow fadeInUp" data-wow-delay="1.3s" data-wow-offset="10" style="width: 100px;">
+					<a href="product_list.html">
+						<p style="margin: 0;width: 100%;display: flex;justify-content: center;align-items: center;">
+							<img src="images/product_list/1.png" style="width: 50px;height: 50px;margin: 0 auto;">
+						</p>
+						<p style="color: #fff;margin: 0;text-align: center;">吐司机</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		</header>
+	
+	<!--产品介绍-->
+	<div class="container">
+	<div class="single">
+		<div class="col-md-5 single-right-left animated wow fadeInDown" data-wow-offset="10" data-wow-delay=".5s">
+			<div class="flexslider">
+				<ul class="slides">
+					<li data-thumb="images/product/si.jpg">
+						<div class="thumb-image">
+							<img src="images/product/si.jpg" data-imagezoom="true" class="img-responsive">
 						</div>
+					</li>
+					<li data-thumb="images/product/si1.jpg">
+						<div class="thumb-image"> <img src="images/product/si1.jpg" data-imagezoom="true" class="img-responsive"> </div>
+					</li>
+					<li data-thumb="images/product/si2.jpg">
+						<div class="thumb-image"> <img src="images/product/si2.jpg" data-imagezoom="true" class="img-responsive"> </div>
+					</li>
+				</ul>
+			</div>
+			<!-- flixslider -->
+			
+			<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+			<script>
+				
+			</script>
+			<!-- flixslider -->
+		</div>	
+		<div class="col-md-7 single-right-left simpleCart_shelfItem animated wow fadeInRight" data-wow-offset="10" data-wow-delay=".5s">
+			<p>CPB-300WCN</p>
+			<h3>HURRICANE飓风系列 高速破壁料理机</h3>
+			<div class="description">
+				<h5><i>商品简介</i></h5>
+				<p>三层铜钢结构，确保最佳热传导。外层使用铜材质是专业的做法，因为它能快速加热和冷 却，从而实现精确的温度把控。优越的加热性能，<b>Heat Surround技术</b>将热量沿底部和侧 壁均匀分布炊具，消除加热不均的现象。<b>Cast stainless steel Cool Grip</b>不锈钢手柄，整 体设计目的为在炉火或高温旁工作时有一个安全的手把可供握持。盖实的不锈钢盖使锅里 的食材保持水分和多汁，从而锁定食物中的营养成分，同时带来美味的口感。</p>
+				<p style="text-align: right;margin-top: 1.5em;">
+					<button style="color: #6D8D24;border: 0px;">前往购买</button>
+					<button style="background: #6D8D24;color: #fff;">京东商城</button>
+					<button style="background: #6D8D24;color: #fff;">天猫商城</button>
+				</p>
+			</div>
+			
+			<!--<div class="description">
+				<p>
+					<h5>上市时间：2018年6月</h5></p>
+			</div>-->
+		</div>
+		<div class="clearfix"> </div>
+		<div class="bootstrap-tab animated wow fadeInRight" data-wow-offset="0" data-wow-delay=".5s">
+			<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+				<ul id="myTab" class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active">
+						<a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">产品介绍</a>
+					</li>
+					<li role="presentation">
+						<a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">功能及参数</a>
+					</li>
+					<li role="presentation">
+						<a href="#dropdown1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1">产品服务</a>
+					</li>
+				</ul>
+				<div id="myTabContent" class="tab-content">
+					<div role="tabpanel" class="tab-pane fade in active bootstrap-tab-text" id="home" aria-labelledby="home-tab">
+						<video width="100%" poster="images/index_banner/4.jpg" controls="controls" style="margin-top: 30px;">
+							<source src="1.mp4" type="video/mp4">
+						</video>
+						<h5>HURRICANE飓风系列 高速破壁料理机</h5>
+						<p>三层铜钢结构，确保最佳热传导。外层使用铜材质是专业的做法，因为它能快速加热和冷却，从而实现精确的温度把控。优越的加热性能，Heat Surround技术将热量沿底部和侧 壁均匀分布炊具，消除加热不均的现象。
+							<span>优越的加热性能，Heat Surround技术将热量沿底部和侧 壁均匀分布炊具，消除加热不均的现象。盖实的不锈钢盖使锅里 的食材保持水分和多汁，从而锁定食物中的营养成分，同时带来美味的口感。</span>
+							<span>Cast stainless steel Cool Grip不锈钢手柄，整 体设计目的为在炉火或高温旁工作时有一个安全的手把可供握持。盖实的不锈钢盖使锅里 的食材保持水分和多汁，从而锁定食物中的营养成分，同时带来美味的口感。</span>
+						</p>
 					</div>
-					<div class="col-md-3 new-collections-grid animated wow fadeInDown" data-wow-offset="10" data-wow-delay=".5s">
-						<div class="new-collections-grid1">
-							<div class="new-collections-grid1-image">
-								<a href="cb_details.html" class="product-image"><img src="images/product/35.jpg" alt=" " class="img-responsive"></a>
-							</div>
-							<h4><a href="cb_details.html">芝士猫耳朵</a></h4>
-							<p>如何将人见人爱的猫耳朵和马苏里拉芝士完美结合？</p>
-							<div class="rating">
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="new-collections-grid1-left simpleCart_shelfItem">
-								<p>
-									<a class="item_add" href="cb_details">查看食谱</a>
-								</p>
-							</div>
-						</div>
+					<div role="tabpanel" class="tab-pane fade bootstrap-tab-text" id="profile" aria-labelledby="profile-tab">
+						<table class="table table-bordered">
+							<tbody>
+								<tr>
+									<td>水箱容量:1升</td>
+									<td>玻璃锅容量:5升</td>
+								</tr>
+								<tr>
+									<td>强大的蒸汽系统，30秒内快速出蒸汽</td>
+									<td>可清洗安全玻璃锅体</td>
+								</tr>
+								<tr>
+									<td>LCD控制面板</td>
+									<td>8种预设食谱</td>
+								</tr>
+								<tr>
+									<td>开始/结束，暂停&加热</td>
+									<td>可拆卸蓄水箱</td>
+								</tr>
+								<tr>
+									<td>自带配件:不锈钢托盘</td>
+									<td>不锈钢镶边玻璃盖</td>
+								</tr>
+								<tr>
+									<td>3年质保</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<div class="col-md-3 new-collections-grid animated wow fadeInUp" data-wow-offset="10" data-wow-delay=".5s">
-						<div class="new-collections-grid1">
-							<div class="new-collections-grid1-image">
-								<a href="cb_details.html" class="product-image"><img src="images/product/36.jpg" alt=" " class="img-responsive"></a>
-							</div>
-							<h4><a href="cb_details.html">芝士猫耳朵</a></h4>
-							<p>如何将人见人爱的猫耳朵和马苏里拉芝士完美结合？</p>
-							<div class="rating">
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="new-collections-grid1-left simpleCart_shelfItem">
-								<p>
-									<a class="item_add" href="cb_details">查看食谱</a>
-								</p>
-							</div>
-						</div>
+					<div role="tabpanel" class="tab-pane fade bootstrap-tab-text" id="dropdown1" aria-labelledby="dropdown1-tab">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>序号</th>
+									<th width="40%">文件名</th>
+									<th width="30%">上传时间</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>CPB-300WCN说明书</td>
+									<td>2018-04-22</td>
+									<td>
+										<a class="fa fa-cloud-download" href="https://www.baidu.com"></a>
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>CPB-300WCN说明书</td>
+									<td>2018-04-22</td>
+									<td>
+										<a class="fa fa-cloud-download" href="http://www.qq.com"></a>
+									</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>CPB-300WCN说明书</td>
+									<td>2018-04-22</td>
+									<td>
+										<a class="fa fa-cloud-download" href="http://www.163.com"></a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<div class="col-md-3 new-collections-grid animated wow fadeInRight" data-wow-offset="10" data-wow-delay=".5s">
-						<div class="new-collections-grid1">
-							<div class="new-collections-grid1-image">
-								<a href="cb_details.html" class="product-image"><img src="images/product/38.jpg" alt=" " class="img-responsive"></a>
-							</div>
-							<h4><a href="cb_details.html">芝士猫耳朵</a></h4>
-							<p>如何将人见人爱的猫耳朵和马苏里拉芝士完美结合？</p>
-							<div class="rating">
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="rating-left">
-									<img src="images/2.png" alt=" " class="img-responsive" />
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="new-collections-grid1-left simpleCart_shelfItem">
-								<p>
-									<a class="item_add" href="cb_details">查看食谱</a>
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="clearfix"></div>
 				</div>
 			</div>
 		</div>
-		
-		<footer id="awd-site-footer" class="banner-bottom">
+	</div>
+	</div>
+	<div class="single-related-products">
+		<div class="container">
+			<h3 class="animated wow zoomIn" data-wow-delay=".3s" data-wow-offset="10">推荐食谱</h3>
+			<p class="est animated wow zoomIn" data-wow-delay=".3s" data-wow-offset="10">为心爱的人做饭，不求多加赞美、评头论足，满满的都吃掉便是最好的报答</p>
+		</div>
+	</div>
+	<div class="recipes-pages ptb-80">
+		<div class="bg-mg-1">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="single-recipes mb-30 animated wow fadeInLeft" data-wow-delay=".7s" data-wow-offset="10">
+							<div class="recipes-thumbnail">
+								<img src="images/recipes/img/1.jpg" alt="">
+							</div>
+							<div class="recipes-desc">
+								<div class="publish-date">
+									<p>13<span>3月</span></p>
+								</div>
+								<div class="recipes-title">
+									<h3><a href="recipes_details.html">芝士猫耳朵</a></h3>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="single-recipes mb-30 animated wow fadeInLeft" data-wow-delay=".5s" data-wow-offset="10">
+							<div class="recipes-thumbnail">
+								<img src="images/recipes/img/2.jpg" alt="">
+							</div>
+							<div class="recipes-desc">
+								<div class="publish-date">
+									<p>18<span>4月</span></p>
+								</div>
+								<div class="recipes-title">
+									<h3><a href="recipes_details.html">焗香焖黄鸭</a></h3>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="single-recipes mb-30 animated wow fadeInLeft" data-wow-delay=".3s" data-wow-offset="10">
+							<div class="recipes-thumbnail">
+								<img src="images/recipes/img/3.jpg" alt="">
+							</div>
+							<div class="recipes-desc">
+								<div class="publish-date">
+									<p>21<span>3月</span></p>
+								</div>
+								<div class="recipes-title">
+									<h3><a href="recipes_details.html">芝士猫耳朵</a></h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<footer id="awd-site-footer" class="banner-bottom">
             <div class="copyright animated" data-animation="fadeInUp" data-animation-delay="1000">
                 <p>© 2018 Cuisinart - All Rights Reserved</p>
             </div>
@@ -534,32 +357,33 @@
                 </ul>
            </nav>
         </footer>
-	
-	</div>
-    <script>
+
+	<!-- JS -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/vendor.js"></script>
+    <script type="text/javascript" src="js/options.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/swiper.animate1.0.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.countTo.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/imagezoom.js"></script>
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script>
 		//启动wow动态效果
 		new WOW().init();
 		
-		//下拉导航栏分类
-		jQuery(document).ready(function() {
-			var qcloud = {};
-			$('[_t_nav]').hover(function() {
-				var _nav = $(this).attr('_t_nav');
-				clearTimeout(qcloud[_nav + '_timer']);
-				qcloud[_nav + '_timer'] = setTimeout(function() {
-					$('[_t_nav]').each(function() {
-						$(this)[_nav == $(this).attr('_t_nav') ? 'addClass' : 'removeClass']('nav-up-selected');
-					});
-					$('#' + _nav).stop(true, true).slideDown(200);
-				}, 150);
-			}, function() {
-				var _nav = $(this).attr('_t_nav');
-				clearTimeout(qcloud[_nav + '_timer']);
-				qcloud[_nav + '_timer'] = setTimeout(function() {
-					$('[_t_nav]').removeClass('nav-up-selected');
-					$('#' + _nav).stop(true, true).slideUp(200);
-				}, 150);
-			});
+		//线下渠道轮播
+		var myswiper = new Swiper('.swiper-container',{
+			autoplay: false, 					//开启自动轮播
+			slidesPerView: 'auto',			//网格数量自动匹配
+			spaceBetween : 20,				//网格间距
+		});
+		var myswiper = new Swiper('.ac-gn-content',{
+			autoplay: false, 					//开启自动轮播
+			slidesPerView: 'auto',			//网格数量自动匹配
+			spaceBetween : 20,				//网格间距
 		});
 		jQuery(function($) {
 			'use strict';
