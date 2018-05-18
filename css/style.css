@@ -416,6 +416,70 @@ strong {
 	z-index: 99;
 }
 /*====================================================
+07. Swiper 4 轮播
+======================================================*/
+#awd-site-wrap {
+    position: relative;
+    height: 100%;
+   
+}
+.bordered #awd-site-wrap {
+    border-style: solid;
+    border-width: 20px;
+}
+#awd-site-wrap.bg {
+    transition: background 0.5s;
+}
+.swiper-container {
+  width: 100%;
+  height: 77.5%;
+}
+.swiper-slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*轮播背景图*/
+#awd-site-wrap .img_slide1{
+    background: url('../images/index_banner/3.jpg') no-repeat;
+}
+#awd-site-wrap .img_slide2{
+	background: url('../images/index_banner/2.jpg') no-repeat;
+}
+#awd-site-wrap .img_slide3{
+	background: url('../images/index_banner/3.jpg') no-repeat;
+}
+#awd-site-wrap .img_slide4{
+	background: url('../images/index_banner/2.jpg') no-repeat;  
+}
+#awd-site-wrap .img_slide1 , #awd-site-wrap .img_slide2 , #awd-site-wrap .img_slide3 , #awd-site-wrap .img_slide4{
+	background-size:cover;
+    background-position:center;
+    width: 100%;
+    height: 100%;
+}
+.swiper-pageination{
+	position: absolute;
+		text-align: center;
+		-webkit-transition: .3s opacity;
+		-o-transition: .3s opacity;
+		transition: .3s opacity;
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+		z-index: 10;
+		bottom: 80px;
+		left: 40px;
+		right: 40px;
+		height: 30px;
+		line-height: 30px;
+}
+/*控制分页器颜色*/
+.swiper-pagination-bullet-active-main{
+	opacity: 10;
+    background: #FFF;
+}
+
+/*====================================================
 08. about内容页
 ====================================================*/
 
@@ -973,7 +1037,7 @@ ul.paging {
 }
 .paging > .active > a, .paging > .active > a:hover {
     background-color: #6D8D24;
-    border-color: #EDB62B;
+    border-color: #6D8D24;
 }
 .pagination > li > a {
     color: #212121;
@@ -1416,7 +1480,65 @@ em {
     /*box-shadow: 1px 1px 1px gainsboro;*/
     margin: 0 !important;
 }
-
+#recipes_details{
+	padding: 3em 0;
+}
+#recipes_details .recipes_details_img{
+	margin-bottom: 2em;
+}
+#recipes_details .recipes_details_img img{
+	width: 100%;
+}
+#recipes_details .recipes_details_conter h2{
+	color: #6D8D24;
+}
+#recipes_details .recipes_details_conter .recipes_details_details{
+	color: #111111;
+	font-weight: 400;
+	font-size: 16px;
+	text-shadow: 1px 1px 0px #FFF;
+}
+#recipes_details #step{
+	background: url(../images/recipes/bg-1.jpg) no-repeat scroll right bottom 0;
+	padding: 1em;
+}
+#recipes_details #step h2{
+	color: #535353;
+	font-weight: 500;
+}
+#recipes_details #step h2 span{
+	color: #535353;
+	font-size: 18px;
+	padding-left: 1em;
+	font-weight: 400;
+	text-shadow: 1px 0px 0px #fff;
+}
+#recipes_details #seasoning-tab{
+	padding: 1em;
+}
+#recipes_details .recipes_details_product{
+	margin: 2em 0;
+	border-top:1px solid #ccc;
+	padding-top: 2em;
+}
+#recipes_details .recipes_details_product h3{
+	color: #6D8D24;
+	margin-bottom: 2em;
+}
+#recipes_details .recipes_details_product p{
+	font-size: 16px;
+	color: #6D8D24;
+	text-align: center;
+	margin-top: 10px;
+}
+#recipes_details .recipes_details_product .recipes_details_product_img{
+	width: 22%;
+	float: left;
+	margin: 0 10px;
+}
+#recipes_details .recipes_details_product .recipes_details_product_img img{
+	width: 100%;
+}
 /*====================================================
 09. 页脚
 ====================================================*/
@@ -1723,6 +1845,18 @@ em {
     .new-collections h3:after, .single-related-products h3:after{
     		right: 10%;
     }
+    #recipes_details .recipes_details_conter h2{
+		font-size: 28px;
+	}
+	#recipes_details #step h2 span{
+		font-size: 14px;
+	}
+	#recipes_details #step h2{
+		font-size: 28px;
+	}
+	#recipes_details .recipes_details_product p{
+		font-size: 12px;
+	}
 }
 
 @media only screen and (max-width: 414px) {
