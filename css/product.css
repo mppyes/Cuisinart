@@ -841,6 +841,7 @@ div#listBox {
     padding: 0 22px;
     position: relative;
     z-index: 2;
+    height: 48px;
 }
 #product_header_litle .flexbox .ac-gn-list {
     display: -webkit-box;
