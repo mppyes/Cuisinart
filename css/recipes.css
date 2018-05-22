@@ -261,7 +261,7 @@ strong {
     display: block;
     width: 100%;
     position: absolute;
-    z-index: 11;
+    z-index: 2;
     bottom: 0;
     height: 30px;
 }
