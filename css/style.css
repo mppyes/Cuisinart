@@ -568,7 +568,7 @@ strong {
     font-size: 3em;
 }
 .timeline{
-	margin-top: 200px;
+	margin-top: 100px;
 	margin-bottom: 100px;
 }
 .timeline p{
@@ -1508,11 +1508,10 @@ em {
 	text-shadow: 1px 1px 0px #FFF;
 }
 #recipes_details #step{
-	background: url(../images/recipes/bg-1.jpg) no-repeat scroll right bottom 0;
 	padding: 1em;
 }
 #recipes_details #step h2{
-	color: #535353;
+	color: #6D8D24;
 	font-weight: 500;
 }
 #recipes_details #step h2 span{

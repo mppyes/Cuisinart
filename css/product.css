@@ -410,7 +410,7 @@ strong {
 }
 .navigation-down {
 	position: absolute;
-	top: 75px;
+	top: 105px;
 	left: 0px;
 	width: 100%;
 	z-index: 99;
@@ -492,15 +492,14 @@ strong {
     color: #222;
     margin: 0;
     position: relative;
-    font-size: 3em;
+    font-size: 2em;
 }
 .timeline{
-	margin-top: 200px;
-	margin-bottom: 100px;
+	margin: 30px 0px 30px 0px;
 }
 .timeline p{
 	text-align: center;
-	margin: 3em 0;
+	margin: .5em 0;
 	font-size: 18px;
 }
 .timeline h3:before{
@@ -775,9 +774,8 @@ div#listBox {
 	width: 49%;
 }
 #product_header .product_header_bottom{
-	height: 80px;
+	height: 60px;
 	width: 100%;
-	padding: 10px 0;
 }
 #product_header .product_header_bottom .header_logo{
 	position: absolute;
@@ -824,8 +822,12 @@ div#listBox {
     font-size: 17px;
     font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
+#product_header_litle .ac-gn-content ul a:hover,#product_header_litle .ac-gn-content ul .active{
+	color: #6D8D24;
+	font-weight: bold;
+}
 #product_header_litle *{
-	font-size: 1em;
+	font-size: .98em;
     font-family: inherit;
     font-weight: inherit;
     line-height: inherit;
@@ -1814,9 +1816,6 @@ em {
         left: auto;
         margin-right: -40px;
     }
-	.navigation-down .nav-down-menu{
-		background-color: rgba(109,141,36,1);
-	}
 
     .social-icons {
         width: 100%;
@@ -1825,12 +1824,7 @@ em {
 
     .copyright {
         display: none;
-    }
-   
-	.navigation-down .nav-down-menu{
-		background-color: rgba(109,141,36,1);
-		z-index: 999;
-	}
+    } 
 	.navigation-down .menu-1 dt{
 		color: #FFFFF;
 		border-bottom: 1px solid #FFF;
