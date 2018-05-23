@@ -54,7 +54,7 @@ display:none;
   -webkit-backface-visibility: hidden;
 }
 .flexslider .slides img {
-  width: 100%;
+  width: 50%;
   display: block;
 }
 .flexslider .slides:after {
@@ -96,6 +96,7 @@ html[xmlns] .flexslider .slides {
 }
 .flexslider .slides img {
   height: auto;
+  margin: 0px auto;
 }
 .flex-viewport {
   max-height: 450px;
@@ -104,8 +105,6 @@ html[xmlns] .flexslider .slides {
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
-  border: 1px solid #D1CFCF;
-
 }
 
 .loading .flex-viewport {
@@ -155,7 +154,6 @@ html[xmlns] .flexslider .slides {
   text-align: center;
 }
 .flex-control-nav li {
-  margin: 0 6px;
   display: inline-block;
   zoom: 1;
   *display: inline;
@@ -165,7 +163,7 @@ html[xmlns] .flexslider .slides {
   height: 11px;
   display: block;
   background: #666;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(109, 141, 36, 0.5);
   cursor: pointer;
   text-indent: -9999px;
   -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
@@ -178,11 +176,11 @@ html[xmlns] .flexslider .slides {
 }
 .flex-control-paging li a:hover {
   background: #333;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(109, 141, 36, 0.7);
 }
 .flex-control-paging li a.flex-active {
   background: #000;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(109, 141, 36, 0.9);
   cursor: default;
 }
 .flex-control-thumbs {
@@ -191,9 +189,7 @@ html[xmlns] .flexslider .slides {
   overflow: hidden;
 }
 .flex-control-thumbs li {
-  width: 32.2%;
-  float: left;
-  margin: 0 1% 0 0;
+  width: 20%;
 }
 .flex-control-thumbs li:nth-child(4){
 	margin:0;
